@@ -1,0 +1,16 @@
+{
+ "sequence_id": "WRC-CANONICAL-CHAIN",
+ "as_at": "2026-08-13",
+ "verification_status": "VALIDATED against objects",
+ "reasoning_chain": [
+  {"node":1,"name":"Maritime casualty occurs; wreck created (Art. 1.3-1.4)","governing_objects":["WRC-ART1"]},
+  {"node":2,"name":"Reporting: master/operator report to Affected State; flag State transmits; Affected State notifies mariners/owner/flag (Art. 5)","governing_objects":["WRC-ART5"]},
+  {"node":3,"name":"Hazard determination: Affected State uses available means (hydrographic surveys) and Art. 1.5 criteria (Art. 6)","governing_objects":["WRC-ART6","WRC-ART1"]},
+  {"node":4,"name":"Marking: Affected State ensures reasonable steps to mark (publish info; mark per international standards) (Art. 7.1)","governing_objects":["WRC-ART7"]},
+  {"node":5,"name":"Removal options: Affected State may remove (Art. 7.2) or permit owner to remove subject to conditions (Art. 7.3, 8, 9)","governing_objects":["WRC-ART7","WRC-ART8","WRC-ART9"]},
+  {"node":6,"name":"Liability: registered owner strictly liable for locating/marking/removing costs, subject to three defences (Art. 10.1); excluded where conflicts with CLC/HNS/Bunker (Art. 10.2); no liability if Affected State negligence (Art. 10.3); may limit liability (Art. 10.4-10.5)","governing_objects":["WRC-ART10"]},
+  {"node":7,"name":"Compulsory insurance: ships of 300 gt+ must maintain insurance/security; certificate issued (Art. 11, Annex)","governing_objects":["WRC-ART11","WRC-ANNEX"]},
+  {"node":8,"name":"Certificates and direct action: certificate carried on board; direct action against insurer; insurer may limit/defend (Art. 12)","governing_objects":["WRC-ART12"]},
+  {"node":9,"name":"Time limits: 3 years from hazard determination; 6 years absolute bar from casualty (Art. 13)","governing_objects":["WRC-ART13"]}
+ ]
+}

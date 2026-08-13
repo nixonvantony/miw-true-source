@@ -1,0 +1,12 @@
+{
+ "sequence_id": "SALVAGE-CANONICAL-CHAIN",
+ "as_at": "2026-08-13",
+ "verification_status": "VALIDATED against objects",
+ "reasoning_chain": [
+  {"node":1,"name":"Vessel or property in danger (navigable or any other waters)","governing_objects":["SALV-ART1"]},
+  {"node":6,"name":"Useful result? No cure no pay with the exception channel (12.1-12.2)","governing_objects":["SALV-ART12"]},
+  {"node":7,"name":"Reward fixed on Art. 13.1(a)-(j) criteria; capped at salved value (13.3); pro-rata payment (13.2)","governing_objects":["SALV-ART13-1","SALV-ART13-3","SALV-ART13-2"]},
+  {"node":8,"name":"Environmental threat + reward shortfall? → special compensation = expenses (14.1, 14.3)","governing_objects":["SALV-ART14-1","SALV-ART14-3"]},
+  {"node":9,"name":"Uplift ≤30% where damage prevented/minimised; tribunal ceiling ≤100% (14.2); offset vs Art. 13 (14.4); negligence risk (14.5)","governing_objects":["SALV-ART14-2","SALV-ART14-4","SALV-ART14-5"]}
+ ]
+}

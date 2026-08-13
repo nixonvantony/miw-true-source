@@ -1,0 +1,11 @@
+{
+ "register": "Nairobi WRC 2007 — Article 1 definitions + derived terms",
+ "as_at": "2026-08-13",
+ "verification_status": "VERIFIED",
+ "definitions": [
+  {"article":"1.1","term":"convention area","text":"exclusive economic zone of a State Party, established in accordance with international law or, if not established, an area beyond and adjacent to the territorial sea extending not more than 200 nautical miles from baselines","object_id":"WRC-ART1","note":"Default = EEZ; optional Art. 3.2 extension to territory/territorial sea available."},
+  {"article":"1.4","term":"wreck","text":"(a) sunken/stranded ship; (b) any part of such ship incl. objects on board; (c) objects lost at sea from a ship stranded/sunken/adrift; (d) ship about to sink/strand where no effective assistance measures are being taken","object_id":"WRC-ART1","note":"Four limbs - includes lost containers and ships about to sink/strand."},
+  {"article":"1.5","term":"hazard","text":"(a) danger/impediment to navigation; OR (b) may reasonably be expected to result in major harmful consequences to marine environment, or damage to coastline/related interests of one or more States","object_id":"WRC-ART1","note":"Two limbs - navigation OR environmental/coastal."},
+  {"article":"11.1","term":"compulsory insurance threshold","text":"ships of 300 gross tonnage or more","object_id":"WRC-ART11","note":"300 gt threshold for insurance/security."}
+ ]
+}
