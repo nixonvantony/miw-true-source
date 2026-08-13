@@ -1,0 +1,12 @@
+{
+ "register": "Contract of Carriage — Hague-Visby / Hamburg / Rotterdam definitions",
+ "as_at": "2026-08-13",
+ "verification_status": "VERIFIED",
+ "definitions": [
+  {"instrument":"Hague-Visby","article":"I","term":"contract of carriage","text":"applies only to contracts of carriage covered by a bill of lading or any similar document of title, in so far as such document relates to the carriage of goods by sea, including any bill of lading or any similar document as aforesaid issued under or pursuant to a charter party from the moment at which such bill of lading or similar document of title regulates the relations between a carrier and a holder of the same","object_id":"HV-ART-I"},
+  {"instrument":"Hamburg","article":"1.6","term":"contract of carriage by sea","text":"any contract whereby the carrier undertakes against payment of freight to carry goods by sea from one port to another; however, a contract which involves carriage by sea and also carriage by some other means is deemed to be a contract of carriage by sea for the purposes of this Convention only in so far as it relates to the carriage by sea","object_id":"HAM-ART-1"},
+  {"instrument":"Rotterdam","article":"1.1","term":"contract of carriage","text":"a contract in which a carrier, against the payment of freight, undertakes to carry goods from one place to another. The contract shall provide for carriage by sea and may provide for carriage by other modes of transport in addition to the sea carriage","object_id":"ROT-ART-1"},
+  {"instrument":"Rotterdam","article":"1.6","term":"performing party","text":"a person other than the carrier that performs or undertakes to perform any of the carrier's obligations under a contract of carriage with respect to the receipt, loading, handling, stowage, carriage, care, unloading or delivery of the goods, to the extent that such person acts, either directly or indirectly, at the carrier's request or under the carrier's supervision or control","object_id":"ROT-ART-1"},
+  {"instrument":"Rotterdam","article":"1.7","term":"maritime performing party","text":"a performing party to the extent that it performs or undertakes to perform any of the carrier's obligations during the period between the arrival of the goods at the port of loading of a ship and their departure from the port of discharge of a ship","object_id":"ROT-ART-1"}
+ ]
+}

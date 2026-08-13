@@ -1,0 +1,13 @@
+{
+ "sequence_id": "COC-CANONICAL-CHAIN",
+ "as_at": "2026-08-13",
+ "verification_status": "VALIDATED against objects",
+ "reasoning_chain": [
+  {"node":1,"name":"Contract of carriage exists (bill of lading or similar document of title; or port-to-port by sea; or place-to-place with sea leg)","governing_objects":["HV-ART-I","HAM-ART-1","ROT-ART-1"]},
+  {"node":2,"name":"Period of responsibility: tackle-to-tackle (HV) OR port-to-port (HAM) OR door-to-door (ROT)","governing_objects":["HV-ART-I","HAM-ART-4","ROT-ART-12"]},
+  {"node":3,"name":"Carrier's duties: due diligence to make seaworthy + properly and carefully carry (HV); took all reasonable measures (HAM); occurrence during period + not attributable to fault (ROT)","governing_objects":["HV-ART-III-1","HV-ART-III-2","HAM-ART-5","ROT-ART-17"]},
+  {"node":4,"name":"Defences: 17 defences incl. nautical fault (HV); no nautical fault (HAM/ROT)","governing_objects":["HV-ART-IV-2","HAM-ART-5","ROT-ART-17"]},
+  {"node":5,"name":"Limits: 666.67 SDR/2 SDR (HV); 835 SDR/2.5 SDR + 2.5x freight delay (HAM); 875 SDR/3 SDR + 3x freight delay (ROT)","governing_objects":["HV-ART-IV-5","HAM-ART-6","ROT-ART-59","ROT-ART-61"]},
+  {"node":6,"name":"Time bar: 1 year (HV); 2 years (HAM/ROT)","governing_objects":["HV-ART-III-6","HAM-ART-20","ROT-ART-64"]}
+ ]
+}
