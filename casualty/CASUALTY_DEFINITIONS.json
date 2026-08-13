@@ -1,0 +1,10 @@
+{
+ "register": "Casualty — SOLAS V / COLREGs / SAR definitions",
+ "as_at": "2026-08-13",
+ "verification_status": "VERIFIED",
+ "definitions": [
+  {"instrument":"SOLAS Chapter V","article":"V/33.1","term":"master's duty to proceed to distress","text":"The master of a ship at sea which is in a position to be able to provide assistance, on receiving a signal from any source that persons are in distress at sea, is bound to proceed with all speed to their assistance, if possible informing them or the search and rescue service that the ship is doing so.","object_id":"SOLAS-V33"},
+  {"instrument":"COLREGs","article":"Rule 5","term":"proper look-out","text":"Every vessel shall at all times maintain a proper look-out by sight and hearing as well as by all available means appropriate in the prevailing circumstances and conditions so as to make a full appraisal of the situation and of the risk of collision.","object_id":"COLREGS-R5"},
+  {"instrument":"SAR Convention","article":"1.3.1","term":"search and rescue service","text":"The performance of distress monitoring, communication, coordination and search and rescue functions, including provision of medical advice, initial medical assistance, or medical evacuation, through the use of public and private resources including cooperating aircraft, ships, vessels and other craft and installations.","object_id":"SAR-131"}
+ ]
+}

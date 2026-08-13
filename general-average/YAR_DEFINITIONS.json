@@ -1,0 +1,12 @@
+{
+ "register": "General Average — York-Antwerp Rules 2016 definitions",
+ "as_at": "2026-08-13",
+ "verification_status": "VERIFIED",
+ "definitions": [
+  {"instrument":"YAR 2016","article":"Rule A","term":"general average act","text":"There is a general average act when, and only when, any extraordinary sacrifice or expenditure is intentionally and reasonably made or incurred for the common safety for the purpose of preserving from peril the property involved in a common maritime adventure.","object_id":"YAR-A"},
+  {"instrument":"YAR 2016","article":"Rule C","term":"losses allowed in GA","text":"Only such losses, damages or expenses which are the direct consequence of the general average act shall be allowed as general average. Loss or damage sustained by the cargo or ship as a consequence of delay, whether on the voyage or subsequently, such as market loss, is not allowed as general average.","object_id":"YAR-C"},
+  {"instrument":"YAR 2016","article":"Rule D","term":"fault and GA","text":"Rights to contribution in general average shall not be affected, though the event which gave rise to the sacrifice or expenditure may have been due to the fault of one of the parties to the adventure; but this shall not prejudice any remedies or defences which may be open against or to that party in respect of such fault.","object_id":"YAR-D"},
+  {"instrument":"YAR 2016","article":"Rule VI","term":"salvage in GA","text":"Salvage payments, including interest and legal costs, shall not be allowed in general average. Special compensation payable to the salvor under Article 14 of the International Convention on Salvage, 1989, or under any similar provision (such as SCOPIC), shall be treated as particular charges and not allowed in general average.","object_id":"YAR-VI"},
+  {"instrument":"YAR 2016","article":"Rule XVII","term":"contributory values","text":"The contributory value of the property shall be the value at the time and place when and where the adventure ends, determined in accordance with the contract of affreightment and the law applicable thereto. The value of cargo shall be the value at the time of discharge, ascertained from the commercial invoice rendered to the receiver or, if there is no such invoice, from the shipped value. The value of the ship shall be the value at the time of discharge, ascertained from the market value or, if there is no market value, from the insured value. The value of freight at risk shall be the amount at risk under the contract of affreightment.","object_id":"YAR-XVII"}
+ ]
+}

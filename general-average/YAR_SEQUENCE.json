@@ -1,0 +1,12 @@
+{
+ "sequence_id": "GA-CANONICAL-CHAIN",
+ "as_at": "2026-08-13",
+ "verification_status": "VALIDATED against objects",
+ "reasoning_chain": [
+  {"node":1,"name":"Extraordinary sacrifice/expense intentionally and reasonably made for common safety (Rule A)","governing_objects":["YAR-A"]},
+  {"node":2,"name":"Losses allowed: direct consequence of GA act (Rule C); excluded: delay consequences (Rule C)","governing_objects":["YAR-C"]},
+  {"node":3,"name":"Fault: GA contribution rights not affected, but party at fault cannot claim (Rule D + Paramount Clause)","governing_objects":["YAR-D","YAR-PARAMOUNT"]},
+  {"node":4,"name":"Salvage: excluded from GA (Rule VI); special compensation (Art. 14/SCOPIC) = particular charges","governing_objects":["YAR-VI"]},
+  {"node":5,"name":"Contribution: contributory values (ship, cargo, freight) share GA proportionally (Rules XVII-XX)","governing_objects":["YAR-XVII","YAR-XVIII","YAR-XIX","YAR-XX"]}
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "sequence_id": "CASUALTY-CANONICAL-CHAIN",
+ "as_at": "2026-08-13",
+ "verification_status": "VALIDATED against objects",
+ "reasoning_chain": [
+  {"node":1,"name":"Casualty or near-miss occurs; master assesses situation","governing_objects":["SOLAS-V33","COLREGS-R5"]},
+  {"node":2,"name":"Master maintains proper look-out (Rule 5); determines risk of collision (Rules 7-8)","governing_objects":["COLREGS-R5","COLREGS-R7","COLREGS-R8"]},
+  {"node":3,"name":"Master takes action to avoid collision (Rules 13-19); sounds signals (Rules 32-37)","governing_objects":["COLREGS-R13","COLREGS-R14","COLREGS-R15","COLREGS-R16","COLREGS-R17","COLREGS-R18","COLREGS-R19","COLREGS-R32","COLREGS-R33","COLREGS-R34","COLREGS-R35","COLREGS-R36","COLREGS-R37"]},
+  {"node":4,"name":"If persons in distress: master proceeds with all speed to assist (SOLAS V/33.1)","governing_objects":["SOLAS-V33"]},
+  {"node":5,"name":"SAR services coordinate (SAR Convention Chapters 1-5); master cooperates","governing_objects":["SAR-131","SAR-CH2","SAR-CH3","SAR-CH4","SAR-CH5"]}
+ ]
+}
