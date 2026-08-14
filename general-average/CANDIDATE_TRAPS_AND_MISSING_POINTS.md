@@ -53,15 +53,64 @@ Particular average = loss/damage borne by owner of damaged property (not shared)
 ### Correct structure
 Distinguish GA (shared) from PA (borne by owner).
 
-## Salvage in GA — YAR Rule VI vs Art. 14/SCOPIC
+## Salvage in GA — YAR Rule VI, and the 2004 edition trap
 
 **Object ID:** `TRAP-SALVAGE-GA`
 
+*Corrected 2026-08-15 (TSCR-9) against the CMI primary texts of both editions. This object previously
+gave the **YAR 2004** rule as though it were YAR 2016 — it stated that salvage payments generally are
+excluded from GA and "treated as particular charges". The Art. 14/SCOPIC limb it was built to guard is
+still a real trap; the reason it gave for that limb was wrong, and its generalisation was an inversion.*
+
 ### Wrong / incomplete form
-'Salvage remuneration (Art. 14/SCOPIC) is allowed in GA.'
+Two errors sit on this Rule, pointing in opposite directions:
+
+1. **The edition error (the dominant one):** 'Salvage is not allowed in general average under YAR 2016'
+   — or its dressed-up variant, 'salvage payments lie where they fall and are treated as particular
+   charges'. That is **YAR 2004**, recited under a 2016 label.
+2. **The over-correction:** 'YAR 2016 allows salvage in GA' stated flat, with no qualification — which
+   sweeps in Art. 14 special compensation and SCOPIC, and ignores the VI(b) gateways.
 
 ### Why it is wrong
-YAR 2016 Rule VI: salvage payments (including special compensation under Art. 14/SCOPIC) are **excluded from GA** — treated as particular charges on salved values.
+The treatment of salvage has moved **twice**, and neither slogan survives the movement:
+
+| Edition | Rule VI(a) position |
+|---|---|
+| YAR 1994 | Salvage expenditure **allowed** in general average |
+| YAR 2004 | **Removed** — salvage payments *"shall lie where they fall and shall not be allowed in general average"*, save only a credit/debit proviso where one party paid another's proportion |
+| YAR 2016 | **Restored, qualified** — salvage expenditure *"shall be allowed in general average"* where the operations were carried out to preserve the property from peril, *"subject to the provisions of paragraphs (b), (c) and (d)"* |
+
+So the 2004 rule is not the current rule, and it is not the 1994 rule either. A candidate who has
+learned "salvage is excluded from GA" has learned one edition — the one in the middle — and is
+answering the wrong instrument.
+
+The qualifications are where the marks are:
+
+- **VI(b)** — where the parties to the adventure have **separate contractual or legal liability to
+  salvors**, salvage is allowed **only** through five stated gateways (significant differences between
+  salved and contributory values after a later accident; significant GA sacrifices; manifestly
+  incorrect salved values with significantly incorrect apportionment; one party having paid a
+  significant proportion of another's salvage; a significant proportion of parties having settled on
+  substantially different terms). The point of the gateways is to stop pointless re-adjustment where
+  the salvors have already been paid separately and re-running it would move little money.
+- **VI(c)** — salvage expenditure **includes** the element of remuneration attributable to the salvors'
+  skill and efforts in preventing or minimising environmental damage under Art. 13(1)(b) of the
+  Salvage Convention 1989.
+- **VI(d)** — **Art. 14 special compensation and SCOPIC are excluded** from GA and are not salvage
+  expenditure under (a). This is the one limb where "not allowed in general average" is the right
+  answer under YAR 2016, and it is the limb the original trap was written to guard.
 
 ### Correct structure
-Attribute salvage remuneration (Art. 14/SCOPIC) to particular charges; not allowed in GA under Rule VI.
+1. Identify the **edition** the contract incorporates before stating any rule on salvage — this is the
+   first move, not a footnote.
+2. Under YAR 2016: Rule VI(a) **allows** salvage expenditure in GA where the operations preserved the
+   property from peril.
+3. Apply VI(b): where the parties are separately liable to salvors, allow it only through the five
+   gateways.
+4. Apply VI(d): Art. 14 special compensation and SCOPIC are **outside** GA.
+5. Do not describe anything under Rule VI as a "particular charge" — that phrase is in neither edition.
+
+### The reason this matters
+The 2004 removal of salvage from GA is the single most cited reason those Rules were so little used,
+and the 2016 restoration is one of the headline changes of that edition. Teaching the 2004 exclusion as
+current law inverts the answer to any question asking what changed in 2016.

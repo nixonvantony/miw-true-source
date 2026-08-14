@@ -6,7 +6,7 @@
   {"node":1,"name":"Extraordinary sacrifice/expense intentionally and reasonably made for common safety (Rule A)","governing_objects":["YAR-A"]},
   {"node":2,"name":"Losses allowed: direct consequence of GA act (Rule C); excluded: delay consequences (Rule C)","governing_objects":["YAR-C"]},
   {"node":3,"name":"Fault: rights to contribution are NOT affected by the fault of a party (Rule D); fault is relocated to remedies and defences under the applicable law, not resolved in the adjustment. Separately, the Rule Paramount allows nothing unless reasonably made or incurred — a reasonableness gate, not a fault gate","governing_objects":["YAR-D","YAR-PARAMOUNT"]},
-  {"node":4,"name":"Salvage: excluded from GA (Rule VI); special compensation (Art. 14/SCOPIC) = particular charges","governing_objects":["YAR-VI"]},
+  {"node":4,"name":"Salvage: ALLOWED in GA under Rule VI(a) where the salvage operations were carried out to preserve the property from peril — subject to VI(b), (c) and (d). Where the parties are separately liable to salvors, VI(b) admits salvage only through five stated gateways. VI(d) excludes Article 14 special compensation and SCOPIC from GA. The blanket exclusion of salvage is the YAR 2004 position, not the 2016 one","governing_objects":["YAR-VI"]},
   {"node":5,"name":"Contribution: contributory values (ship, cargo, freight) share GA proportionally (Rules XVII-XX)","governing_objects":["YAR-XVII","YAR-XVIII","YAR-XIX","YAR-XX"]}
  ]
 }
