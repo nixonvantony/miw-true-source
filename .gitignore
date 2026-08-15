@@ -1,0 +1,5 @@
+# Architecture prototype — simulated private evidence layer.
+# Branch: architecture/public-derived-private-evidence-prototype
+# This directory demonstrates the public/private boundary inside the working tree only.
+# It must never be committed: it carries verbatim source wording.
+_prototype-private-evidence/

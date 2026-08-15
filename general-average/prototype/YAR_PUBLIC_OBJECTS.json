@@ -1,0 +1,107 @@
+{
+ "register": "PROTOTYPE — public derived YAR objects (no source wording)",
+ "status": "ARCHITECTURE PROTOTYPE — not canonical. general-average/YAR_DEFINITIONS.json remains the canonical object file and is unchanged. This file exists for comparison only.",
+ "as_at": "2026-08-15",
+ "scope": [
+  "YAR-PARAMOUNT",
+  "YAR-D",
+  "YAR-VI"
+ ],
+ "scope_note": "Deliberately limited to the three objects corrected under TSCR-6 and TSCR-9. YAR-A, YAR-C and YAR-XVII are NOT prototyped and are unaffected.",
+ "evidence_index": "general-average/prototype/EVIDENCE_INDEX.json",
+ "objects": [
+  {
+   "object_id": "YAR-PARAMOUNT",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule Paramount",
+   "term": "reasonableness gate on all allowances",
+   "proposition": "The Rule Paramount conditions every allowance in the adjustment on the reasonableness of the sacrifice or expenditure: nothing is allowed unless it was reasonably made or incurred. Under the Rule of Interpretation it overrides both the lettered and the numbered Rules, so it operates as a general gate on admissibility and quantum rather than as one rule among others. Its test is directed at the quality of the act, not at the identity or culpability of the party claiming; it therefore contains no fault bar, and treating it as one misattributes to the Rules a consequence that comes, if at all, from the applicable law.",
+   "proposition_authorship": "MIW-authored derived statement. Not source wording.",
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016",
+    "evidence_id": "EVID-YAR-2016-PARAMOUNT",
+    "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+    "evidence_sha256": "8b402028e01e3390521a90b14d655fe1d2f50db432e659c1d9e93add40beee45",
+    "retrieved": "2026-08-15",
+    "verification_note": "Created and checked word for word against the CMI primary source 2026-08-15 under TSCR-6."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-RULE-D-FAULT"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#3"
+    ],
+    "related_objects": [
+     "YAR-D"
+    ]
+   },
+   "trap_note": "Commonly misread as a fault gate. It is a reasonableness gate; the fault question belongs to Rule D and to the applicable law."
+  },
+  {
+   "object_id": "YAR-D",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule D",
+   "term": "fault and general average",
+   "proposition": "Fault on the part of a party to the common maritime adventure does not of itself defeat, reduce or otherwise affect rights to contribution in general average, even where the fault caused the very event that gave rise to the sacrifice or expenditure. Rule D separates the adjustment from the question of blame: the contribution is admitted and the adjustment proceeds, while the consequences of the fault are relocated to whatever remedies and defences the applicable law and the contract make available against or in favour of that party. The party at fault is therefore not barred from claiming by reason of that fault alone — but the rule equally preserves the fault-based remedies, so it does not make general average payable regardless of fault.",
+   "proposition_authorship": "MIW-authored derived statement. Not source wording.",
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016",
+    "evidence_id": "EVID-YAR-2016-D",
+    "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+    "evidence_sha256": "999496d6a48e0c684a4d6b80391e2a048ee44acedef1f4d5fd9b69a261bfd72b",
+    "retrieved": "2026-08-15",
+    "verification_note": "Corrected 2026-08-15 under TSCR-6. The superseded object carried YAR 1994 wording under a YAR 2016 label."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-RULE-D-FAULT"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#3"
+    ],
+    "related_objects": [
+     "YAR-PARAMOUNT"
+    ]
+   },
+   "trap_note": "The inversion to guard against is 'a party at fault cannot claim in general average'. The over-correction to guard against is 'general average is payable regardless of fault'. Rule D is neither: it preserves the contribution and preserves the fault remedies. Any bar on a shipowner at fault comes from the applicable law, which is why the New Jason Clause exists."
+  },
+  {
+   "object_id": "YAR-VI",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule VI",
+   "term": "salvage remuneration in general average",
+   "proposition": "Expenditure of a salvage character, borne by parties to the common maritime adventure under a salvage contract or otherwise, is allowable in general average under Rule VI(a), provided the salvage operations were undertaken to preserve the imperilled property in that adventure, and subject to paragraphs (b), (c) and (d). Where the parties bear separate contractual or legal liability to the salvors, paragraph (b) narrows the allowance to five defined circumstances, each turning on a significant distortion between what a party in fact bore and what a correct apportionment would have required — a later accident or loss during the voyage producing significant differences between salved and contributory values; significant general average sacrifices; manifestly incorrect salved values combined with a significantly incorrect apportionment; payment by one party of a significant proportion of salvage due from another; or settlement by a significant proportion of the parties on substantially different terms, that last limb disregarding interest, currency correction and the legal costs of salvor and contributing interest alike. Paragraph (c) confirms that salvage remuneration reflecting the salvors' skill and effort in preventing or minimising environmental damage, as taken into account under Article 13(1)(b) of the Salvage Convention 1989, forms part of the allowable salvage expenditure. Paragraph (d) then puts Article 14 outside the adjustment altogether: where a shipowner owes a salvor special compensation under that article, measured as Article 14(4) provides, or owes anything substantially equivalent to it such as SCOPIC, that liability is neither allowable in general average nor counted as salvage expenditure for the purposes of paragraph (a).",
+   "proposition_authorship": "MIW-authored derived statement. Not source wording.",
+   "edition_history": "The allowance has moved across editions and the edition label governs the answer. YAR 1994 Rule VI(a) allowed salvage expenditure in general average. YAR 2004 Rule VI(a) removed the allowance, leaving salvage payments to lie where they fell, subject only to a credit and debit proviso where one party had paid another's proportion. YAR 2016 Rule VI(a) restores the allowance in qualified form, with the exclusion confined to paragraph (d). Stating the blanket exclusion under a 2016 label is therefore an edition error carrying an inverted legal proposition, not a wording defect.",
+   "edition_history_evidence": [
+    "CMI-YAR-2004",
+    "CMI-YAR-TABULAR-1994-2004-2016"
+   ],
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016",
+    "evidence_id": "EVID-YAR-2016-VI",
+    "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+    "evidence_sha256": "d9f97dddb7ae13dd96237166da6a70c78ddb10e6b5a3d4aac528e2e004a2855f",
+    "retrieved": "2026-08-15",
+    "verification_note": "Corrected 2026-08-15 under TSCR-9. The superseded object carried the YAR 2004 blanket exclusion under a YAR 2016 label and mislabelled Article 14 / SCOPIC compensation as particular charges."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-SALVAGE-GA"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#4"
+    ],
+    "related_objects": []
+   },
+   "trap_note": "Two distinct errors. First, the edition trap: asserting that salvage is not allowed in general average, which is the 2004 position stated under a 2016 label. Second, the classification error: treating Article 14 or SCOPIC special compensation as ordinary Rule VI general average expenditure, when VI(d) excludes it from general average and from the definition of salvage expenditure in VI(a)."
+  }
+ ]
+}
