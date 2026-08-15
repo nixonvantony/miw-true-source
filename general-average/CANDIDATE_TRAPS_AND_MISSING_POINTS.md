@@ -25,9 +25,9 @@ Apply Rule A test (extraordinary + intentional + reasonable + common safety); ex
 'A party at fault cannot claim contribution in general average' — or, in its Rule-Paramount dress, 'the Rule Paramount bars GA where the party claiming was at fault.'
 
 ### Why it is wrong
-Rule D says the opposite: rights to contribution **shall not be affected**, though the event may have been due to the fault of one of the parties, *"but this shall not prejudice any remedies or defences which may be open against or to that party in respect of such fault"* (`YAR-D`). Rule D **preserves** the GA right and **relocates** the consequence of fault out of the adjustment and into remedies and defences under the applicable law. The adjustment proceeds; the fault is fought separately.
+Rule D says the opposite (`YAR-D`): rights to contribution are **not affected** by the fault of a party to the adventure, even where that fault caused the event, and the rule expressly leaves intact whatever remedies and defences are open **against or in favour of** that party in respect of the fault. Rule D **preserves** the GA right and **relocates** the consequence of fault out of the adjustment and into the applicable law. The adjustment proceeds; the fault is fought separately.
 
-The Rule Paramount (`YAR-PARAMOUNT`) is a **reasonableness gate**, not a fault gate: *"In no case shall there be any allowance for sacrifice or expenditure unless reasonably made or incurred."* It asks whether the sacrifice or expenditure was reasonable — not who caused the casualty. Attributing a fault bar to it is a misattribution, not an overstatement.
+The Rule Paramount (`YAR-PARAMOUNT`) is a **reasonableness gate**, not a fault gate: it allows nothing unless the sacrifice or expenditure was reasonably made or incurred. It asks whether the sacrifice or expenditure was reasonable — not who caused the casualty. Attributing a fault bar to it is a misattribution, not an overstatement.
 
 ### Correct structure
 1. Apply Rule D: fault does **not** defeat the right to contribution; the adjustment proceeds.
@@ -77,8 +77,8 @@ The treatment of salvage has moved **twice**, and neither slogan survives the mo
 | Edition | Rule VI(a) position |
 |---|---|
 | YAR 1994 | Salvage expenditure **allowed** in general average |
-| YAR 2004 | **Removed** — salvage payments *"shall lie where they fall and shall not be allowed in general average"*, save only a credit/debit proviso where one party paid another's proportion |
-| YAR 2016 | **Restored, qualified** — salvage expenditure *"shall be allowed in general average"* where the operations were carried out to preserve the property from peril, *"subject to the provisions of paragraphs (b), (c) and (d)"* |
+| YAR 2004 | **Removed** — salvage payments were left to lie where they fell and were not allowed in general average, save only a credit/debit proviso where one party had paid another's proportion |
+| YAR 2016 | **Restored, qualified** — salvage expenditure is allowed in general average where the operations were carried out to preserve the property from peril, subject to paragraphs (b), (c) and (d) |
 
 So the 2004 rule is not the current rule, and it is not the 1994 rule either. A candidate who has
 learned "salvage is excluded from GA" has learned one edition — the one in the middle — and is

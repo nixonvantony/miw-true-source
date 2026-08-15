@@ -1,8 +1,10 @@
 {
  "sequence_id": "GA-CANONICAL-CHAIN",
  "as_at": "2026-08-15",
- "verification_status": "INTERNALLY VALIDATED against referenced structured objects — this is NOT primary-source verification, which is recorded per object in YAR_DEFINITIONS.json (primary_source.scope_verified) and in YAR_SOURCE_PROVENANCE.md",
- "validation_scope": "Nodes 1-4 resolve to defined objects. Node 5 references YAR-XVIII, YAR-XIX and YAR-XX, which do NOT exist in YAR_DEFINITIONS.json; that node is therefore NOT validated. Logged as a residual defect, outside the TSCR-6 / TSCR-9 correction scope.",
+ "verification_status": "INTERNALLY VALIDATED against referenced structured objects — this is NOT primary-source verification. The two are deliberately distinct: internal validation asks only whether every governing_object resolves to a defined object; primary-source verification asks whether that object was checked word for word against a named source, and is recorded per object in YAR_DEFINITIONS.json (objects[].verification.status) and in YAR_SOURCE_PROVENANCE.md. A node may be internally valid while resting on an unverified_legacy object — node 2 and node 5 both do.",
+ "validation_scope": "Nodes 1-4 resolve to defined objects. Node 5 references YAR-XVIII, YAR-XIX and YAR-XX, which do NOT exist in YAR_DEFINITIONS.json; that node is therefore NOT validated. Logged as a residual defect, outside the TSCR-6 / TSCR-9 correction scope and NOT resolved by the public-derived migration.",
+ "architecture_note": "Resolution is by object_id only. This chain never depended on source wording and is unaffected by the move to PUBLIC DERIVED / PRIVATE EVIDENCE: every governing_object below resolves against the migrated objects without any verbatim text being present.",
+ "governing_object_verification": {"primary_verified": ["YAR-PARAMOUNT", "YAR-D", "YAR-VI"], "unverified_legacy": ["YAR-A", "YAR-C", "YAR-XVII"], "nonexistent": ["YAR-XVIII", "YAR-XIX", "YAR-XX"]},
  "reasoning_chain": [
   {"node":1,"name":"Extraordinary sacrifice/expense intentionally and reasonably made for common safety (Rule A)","governing_objects":["YAR-A"]},
   {"node":2,"name":"Losses allowed: direct consequence of GA act (Rule C); excluded: delay consequences (Rule C)","governing_objects":["YAR-C"]},

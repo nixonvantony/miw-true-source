@@ -1,0 +1,88 @@
+{
+ "register": "General Average — public evidence index (metadata only)",
+ "architecture": "PUBLIC DERIVED / PRIVATE EVIDENCE",
+ "as_at": "2026-08-15",
+ "public_counterpart_of": "the private MIW source-evidence vault; see PRIVATE_EVIDENCE_BOUNDARY.md",
+ "contains_no_source_wording": true,
+ "evidence_sha256_definition": "sha256 over the UTF-8 bytes of the verbatim passage held privately at private_location_key. It identifies the passage, not the file carrying it.",
+ "location_key_model": "vault://<path> is a logical address resolved by local vault configuration. Absolute machine paths are prohibited in this repository.",
+ "coverage_note": "Evidence exists only for objects whose verification status is primary_verified. YAR-A, YAR-C and YAR-XVII have NO evidence record; this is a truthful gap, not a missing link.",
+ "sources": [
+  {
+   "source_id": "CMI-YAR-2016",
+   "title": "York-Antwerp Rules 2016 (English version)",
+   "issuer": "Comite Maritime International (CMI)",
+   "url": "https://comitemaritime.org/wp-content/uploads/2023/01/YAR-2016-English-Version.pdf",
+   "retrieved": "2026-08-15",
+   "bytes": 291174,
+   "sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+   "held": "not in this repository — private vault holds identity and hash only; no PDF held"
+  },
+  {
+   "source_id": "CMI-YAR-2004",
+   "title": "York-Antwerp Rules 2004 (English version)",
+   "issuer": "Comite Maritime International (CMI)",
+   "url": "https://comitemaritime.org/wp-content/uploads/2023/01/YAR-2004-English-Version.pdf",
+   "retrieved": "2026-08-15",
+   "bytes": 166772,
+   "sha256": "b9e6c79a1b2a6acb8b64e13efb451be4024a4a85a3d2d5b0dc1a1e84fffc0c07",
+   "held": "not in this repository — edition-comparison source"
+  },
+  {
+   "source_id": "CMI-YAR-TABULAR-1994-2004-2016",
+   "title": "York-Antwerp Rules 2016 - Tabular Format (CMI 1994/2004/2016 comparison)",
+   "issuer": "Comite Maritime International (CMI)",
+   "url": "https://comitemaritime.org/wp-content/uploads/2018/06/2016-York-Antwerp-Rules-Tabular-Format-Final-Clean.pdf",
+   "retrieved": "2026-08-15",
+   "sha256": "c21b948273e20f3a8dac0c0ccf55934bac43269f6e9faf4128a45ea677e6aeaf",
+   "held": "not in this repository — edition-comparison source"
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "EVID-YAR-2016-PARAMOUNT",
+   "source_id": "CMI-YAR-2016",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule Paramount",
+   "verification_scope": "Rule Paramount, complete text.",
+   "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+   "evidence_sha256": "8b402028e01e3390521a90b14d655fe1d2f50db432e659c1d9e93add40beee45",
+   "retrieved": "2026-08-15",
+   "private_location_key": "vault://cmi/yar/2016/rule-paramount",
+   "public_objects": [
+    "YAR-PARAMOUNT"
+   ]
+  },
+  {
+   "evidence_id": "EVID-YAR-2016-D",
+   "source_id": "CMI-YAR-2016",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule D",
+   "verification_scope": "Rule D, complete text.",
+   "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+   "evidence_sha256": "999496d6a48e0c684a4d6b80391e2a048ee44acedef1f4d5fd9b69a261bfd72b",
+   "retrieved": "2026-08-15",
+   "private_location_key": "vault://cmi/yar/2016/rule-d",
+   "public_objects": [
+    "YAR-D"
+   ]
+  },
+  {
+   "evidence_id": "EVID-YAR-2016-VI",
+   "source_id": "CMI-YAR-2016",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule VI",
+   "verification_scope": "Rule VI paragraphs (a) and (d), verbatim. Paragraphs (b) and (c) were never held verbatim in the public tree; their substance is carried by the public proposition.",
+   "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+   "evidence_sha256": "d9f97dddb7ae13dd96237166da6a70c78ddb10e6b5a3d4aac528e2e004a2855f",
+   "retrieved": "2026-08-15",
+   "private_location_key": "vault://cmi/yar/2016/rule-vi",
+   "public_objects": [
+    "YAR-VI"
+   ]
+  }
+ ]
+}

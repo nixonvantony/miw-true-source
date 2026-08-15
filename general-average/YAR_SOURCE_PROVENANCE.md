@@ -52,8 +52,9 @@ Verified against the primary source, word for word:
 
 - `YAR-PARAMOUNT` — Rule Paramount (created 2026-08-15 under TSCR-6; did not previously exist)
 - `YAR-D` — Rule D (text **corrected** 2026-08-15 under TSCR-6)
-- `YAR-VI` — Rule VI (text **corrected** 2026-08-15 under TSCR-9; paragraphs (a) and (d) verbatim,
-  (b) and (c) structurally represented — see the rights note below)
+- `YAR-VI` — Rule VI (text **corrected** 2026-08-15 under TSCR-9; paragraphs (a) and (d) verified
+  word for word and now held as private evidence, (b) and (c) never held verbatim and carried by the
+  MIW proposition — see the rights note below)
 
 **Nothing else in this package has been checked against the primary source.** `YAR-A`, `YAR-C` and
 `YAR-XVII` remain on their pre-2026-08-15 footing.
@@ -62,10 +63,11 @@ Verified against the primary source, word for word:
 
 ### Rule D — what it actually does
 
-*Rule text not reproduced here.* The verified wording is held once, in the canonical structured object
-**`YAR-D`** (`YAR_DEFINITIONS.json`), checked word for word against the CMI primary source identified
-in the table above (sha256 `0c364edb…`, retrieved 2026-08-15). What follows is the proposition that
-reading established.
+*Rule text not reproduced here.* Since the public-derived migration the verified wording is held in
+the **private evidence vault** as `EVID-YAR-2016-D`, not in this repository. The public object
+**`YAR-D`** (`YAR_DEFINITIONS.json`) carries the proposition and the pointer; the passage was checked
+word for word against the CMI primary source identified in the table above (sha256 `0c364edb…`,
+retrieved 2026-08-15). What follows is the proposition that reading established.
 
 Rule D **preserves** the right to contribution notwithstanding the fault of a party, and **relocates**
 the consequence of that fault into remedies and defences under the applicable law. It does **not** bar
@@ -76,11 +78,12 @@ York-Antwerp Rules — which is exactly why the **New Jason Clause** exists.
 
 ### Rule Paramount — what it actually governs
 
-*Rule text not reproduced here.* The verified wording is held once, in the canonical structured object
-**`YAR-PARAMOUNT`** (`YAR_DEFINITIONS.json`), created and checked against the same primary source.
+*Rule text not reproduced here.* The verified wording is held in the private evidence vault as
+`EVID-YAR-2016-PARAMOUNT`. The public object **`YAR-PARAMOUNT`** (`YAR_DEFINITIONS.json`) carries the
+proposition and the pointer; the passage was created and checked against the same primary source.
 
-A **reasonableness gate**: it allows nothing unless the sacrifice or expenditure was *reasonably made
-or incurred*. Under the Rule of Interpretation it overrides both the lettered and the numbered Rules,
+A **reasonableness gate**: it allows nothing unless the sacrifice or expenditure was reasonably made
+or incurred. Under the Rule of Interpretation it overrides both the lettered and the numbered Rules,
 but its subject matter is whether the sacrifice or expenditure was reasonable, not who was at fault. The pre-correction claim that it "bars GA where
 fault of party claiming" was a **misattribution**, not an overstatement: the Rule Paramount says
 nothing whatever about fault.
@@ -94,26 +97,27 @@ object was not the text it claimed to be, and has been corrected to the 2016 wor
 
 ### Rule VI — what it actually does (TSCR-9)
 
-*Rule text not reproduced here.* The verified wording of paragraphs **(a)** and **(d)** is held once,
-in the canonical structured object **`YAR-VI`** (`YAR_DEFINITIONS.json`), checked word for word
-against the CMI primary source identified in the table above. Paragraphs **(b)** and **(c)** are held
-there structurally, in the `paragraph_b_gateways` and `paragraph_c` fields, rather than reproduced.
+*Rule text not reproduced here.* The verified wording of paragraphs **(a)** and **(d)** is held in the
+private evidence vault as `EVID-YAR-2016-VI`, checked word for word against the CMI primary source
+identified in the table above. Paragraphs **(b)** and **(c)** were never held verbatim; their
+substance is carried by the MIW proposition in the public object **`YAR-VI`**
+(`YAR_DEFINITIONS.json`), which also carries the pointer to the evidence.
 
 The two limbs that carry the correction are:
 
-- **VI(a)** — expenditure in the nature of salvage **shall be allowed in general average**, provided
-  the salvage operations were carried out to preserve the property in the common maritime adventure
-  from peril, and **subject to paragraphs (b), (c) and (d)**.
-- **VI(d)** — special compensation payable to a salvor by the shipowner under **Article 14** of the
-  International Convention on Salvage, 1989, or any provision similar in substance such as **SCOPIC**,
-  **shall not be allowed in general average**, and is not salvage expenditure under paragraph (a).
+- **VI(a)** — salvage-type expenditure **is allowed** in general average, provided the operations were
+  undertaken to preserve the imperilled property in the adventure, and **subject to paragraphs (b),
+  (c) and (d)**.
+- **VI(d)** — a shipowner's liability for **Article 14** special compensation under the Salvage
+  Convention 1989, and for anything substantially equivalent such as **SCOPIC**, is **excluded from
+  general average** and does not count as salvage expenditure under paragraph (a).
 
-The pre-correction `YAR-VI` object read *"Salvage payments, including interest and legal costs, shall
-not be allowed in general average"* and described Art. 14 / SCOPIC compensation as *"particular
-charges"*. Set against the two paragraphs above:
+The pre-correction `YAR-VI` object asserted that salvage payments, together with interest and legal
+costs, were excluded from general average, and it described Art. 14 / SCOPIC compensation as
+particular charges. Set against the two paragraphs above:
 
-- The **first limb was an inversion**. It is the **YAR 2004** Rule VI(a) rule — *"shall lie where they
-  fall and shall not be allowed in general average"* — carried under a **YAR 2016** label. Unlike the
+- The **first limb was an inversion**. It is the **YAR 2004** Rule VI(a) position — salvage payments
+  left to lie where they fell, not allowed in GA — carried under a **YAR 2016** label. Unlike the
   Rule D defect under TSCR-6, this was **not** a wording-fidelity defect with the same legal effect: the
   object asserted the opposite of the instrument it named.
 - The **second limb was right for the wrong reason**. Art. 14 / SCOPIC compensation *is* excluded under
@@ -126,9 +130,9 @@ charges"*. Set against the two paragraphs above:
 
 | Edition | Rule VI(a) | Source |
 |---|---|---|
-| YAR 1994 | *"Expenditure incurred by the parties to the adventure in the nature of salvage … shall be allowed"* | CMI tabular comparison, sha256 `c21b9482…` |
-| YAR 2004 | *"Salvage payments … shall lie where they fall and shall not be allowed in general average"*, save a credit/debit proviso where one party paid another's proportion | CMI YAR 2004, sha256 `b9e6c79a…` |
-| YAR 2016 | Allowance **restored, qualified** — wording held in object `YAR-VI`, not repeated here | CMI YAR 2016, sha256 `0c364edb…` |
+| YAR 1994 | Salvage-type expenditure incurred by the parties to the adventure was **allowed** in general average | CMI tabular comparison, sha256 `c21b9482…` |
+| YAR 2004 | Allowance **removed** — salvage payments were left to lie where they fell and were not allowed in general average, save a credit/debit proviso where one party had paid another's proportion | CMI YAR 2004, sha256 `b9e6c79a…` |
+| YAR 2016 | Allowance **restored, qualified** — stated by the proposition in object `YAR-VI`; wording held privately as `EVID-YAR-2016-VI` | CMI YAR 2016, sha256 `0c364edb…` |
 
 The treatment therefore moved **twice**. The 2004 exclusion is a real historical proposition and
 remains correct **about YAR 2004**; it is wrong only when presented as the current rule. That is the
@@ -145,7 +149,7 @@ auditable and the founder decides whether they warrant their own TSCRs.
 |---|---|---|
 | ~~`YAR-VI`~~ | ~~States that salvage payments *"shall not be allowed in general average"*. That is the **YAR 2004** rule…~~ **RESOLVED 2026-08-15 under TSCR-9.** Confirmed on inspection, corrected against the CMI primary text, and the dependency chain (`TRAP-SALVAGE-GA`, `YAR_SEQUENCE` node 4) corrected with it. Retained here as the audit trail of how the defect was found | ~~HIGH~~ — **CLOSED** |
 | `YAR-C` | Reproduces YAR 1994 Rule C. Omits YAR 2016 Rule C.2 (no allowance for environmental damage or escape/release of pollutants) and paraphrases C.3 | MEDIUM |
-| `YAR-XVII` | A paraphrase, not the 2016 wording. YAR 2016 Rule XVII(a)(i) works from *"actual net values of the property at the termination of the common maritime adventure"* | MEDIUM |
+| `YAR-XVII` | A paraphrase, not the 2016 wording. YAR 2016 Rule XVII(a)(i) works from the actual net values of the property at the termination of the common maritime adventure, which this object does not state | MEDIUM |
 | `YAR-A` | Matches YAR 2016 Rule A paragraph 1 exactly. Paragraph 2 is not held | LOW — accurate as far as it goes |
 | `YAR_SEQUENCE` node 5 | References `YAR-XVIII`, `YAR-XIX`, `YAR-XX`. **None of these objects exists.** Three dangling references remain after TS-P03 (the `YAR-PARAMOUNT` dangler is now resolved) | MEDIUM — TSCR-8(c) territory |
 | `COVERAGE_MATRIX` | Q6 asserts coverage via "Rule F"; no `YAR-F` object exists. Q3 asserts Rules XVII–XX; only `YAR-XVII` exists | MEDIUM — TSCR-8(c), already logged |
@@ -153,7 +157,40 @@ auditable and the founder decides whether they warrant their own TSCRs.
 These are the substance of the future **TS-P06 full YAR corpus** work. TS-P03 does not close them and
 does not claim to.
 
-## Rights position — FLAGGED FOR FOUNDER
+## How verification now resolves — public derived / private evidence
+
+Adopted 2026-08-15. The package no longer holds source wording in its public objects. The chain is:
+
+```
+public object (YAR_DEFINITIONS.json)
+  → verification.evidence_id
+  → EVIDENCE_INDEX.json          (metadata only: source id, hashes, locator, location key)
+  → private_location_key         (vault://cmi/yar/2016/rule-vi — logical, never a machine path)
+  → private evidence vault       (the verbatim passage, outside this repository)
+```
+
+Reading this file end to end therefore gives the propositions and the audit trail, but not the rule
+text. That is deliberate. `evidence_sha256` is the SHA-256 of the passage bytes, so a claim can still
+be re-checked against exactly what was verified, by anyone holding the vault.
+
+**Three objects have evidence; three do not.** `YAR-PARAMOUNT`, `YAR-D` and `YAR-VI` are
+`primary_verified` and name an `evidence_id`. `YAR-A`, `YAR-C` and `YAR-XVII` are `unverified_legacy`
+and name none, because none exists. The migration did not upgrade a single verification state, and an
+object with no evidence says so rather than pointing at something that is not there. Full rules in
+[`PRIVATE_EVIDENCE_BOUNDARY.md`](../PRIVATE_EVIDENCE_BOUNDARY.md).
+
+## Rights position — MATERIALLY IMPROVED, ONE ITEM STILL OPEN
+
+**Forward exposure is closed.** The public YAR object layer carried roughly 3,600 characters of
+source wording before the migration and carries none after it. No source PDF was ever committed, and
+none is held even privately — the CMI texts are recorded by URL, byte count and hash only.
+
+**The historical exposure remains and is the open item.** Removing the wording from the current tree
+does not remove it from earlier commits, which stay publicly reachable in this repository's history.
+That is a separate founder decision — leave it, clear it, or rewrite history — and this migration
+deliberately does none of the three.
+
+The record of the original flag follows, retained as the audit trail.
 
 `miw-true-source` is a **public** repository and already contains verbatim CMI rule text
 (`YAR-A`, `YAR-C`, `YAR-D`, `YAR-VI`, `YAR-XVII`) committed before this correction. The corpus-wide
@@ -186,5 +223,9 @@ so the exposure was actively minimised rather than allowed to grow:
   the object is to be source-faithful, and it is the reason this addendum exists rather than a bare
   "no change".
 
-The founder decision required is unchanged and still open: **rights clearance for this public
-repository, or a move to private.**
+*End of the retained original flag.*
+
+**Superseded 2026-08-15 by the public-derived migration**, which closed the forward exposure outright
+rather than waiting on the clearance decision. What survives of the original flag is narrower and
+purely historical: **verbatim CMI wording remains in earlier public commits of this repository.**
+That is the one rights item still requiring a founder decision.

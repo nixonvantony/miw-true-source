@@ -5,7 +5,30 @@
 | Package | general-average |
 | As at | 2026-08-15 |
 | Instruments | York-Antwerp Rules 2016 (CMI) |
-| Current stage | **FOUNDER_REVIEW** — TSCR-6 and TSCR-9 resolved; package **not** complete (see residuals) |
+| Current stage | **FOUNDER_REVIEW** — TSCR-6 and TSCR-9 resolved; public-derived migration applied; package **not** complete (see residuals) |
+| Architecture | **PUBLIC DERIVED / PRIVATE EVIDENCE** — adopted 2026-08-15 |
+
+## Architecture — PUBLIC DERIVED / PRIVATE EVIDENCE
+
+This package is the **production pilot** for the model. It has been adopted as the canonical True
+Source architecture but applied nowhere else yet — no other package has been migrated.
+
+`YAR_DEFINITIONS.json` now holds MIW-authored propositions and verification pointers, and holds **no
+substantial source wording**. Verbatim evidence lives outside this repository, addressed by
+`verification.evidence_id` and resolved through `EVIDENCE_INDEX.json` to a logical
+`private_location_key`. See [`PRIVATE_EVIDENCE_BOUNDARY.md`](../PRIVATE_EVIDENCE_BOUNDARY.md).
+
+What the migration did **not** do:
+
+- It did not change any object's verification state. Three objects are `primary_verified`
+  (`YAR-PARAMOUNT`, `YAR-D`, `YAR-VI`) and three are `unverified_legacy` (`YAR-A`, `YAR-C`,
+  `YAR-XVII`) — the same split as before.
+- It did not correct any legal content. The known `YAR-C` and `YAR-XVII` defects are now carried
+  explicitly on the objects as `known_defect`, and remain open.
+- It did not create the missing `YAR-XVIII` / `XIX` / `XX` objects, resolve sequence node 5, or touch
+  the `COVERAGE_MATRIX` hygiene items.
+- It did not remove verbatim wording from earlier commits. **Historical public source exposure
+  remains in Git history** — a separate founder decision.
 
 ## Metrics (corrected 2026-08-15)
 - Rule definition objects: **6** — `YAR-PARAMOUNT`, `YAR-A`, `YAR-C`, `YAR-D`, `YAR-VI`, `YAR-XVII`
@@ -45,7 +68,7 @@ Raised by TSCR-6, which surfaced the defect but was scoped not to fix it. Opened
 |---|---|
 | Classification | **RELEASE-CRITICAL** — an inversion of a legal proposition in a candidate-facing object, with confirmed downstream consumption |
 | Primary authority | CMI, *York-Antwerp Rules 2016 (English version)*, SHA-256 `0c364edb…`, **re-retrieved 2026-08-15 and byte-identical** to the TSCR-6 record. Edition comparison verified against CMI YAR 2004 (SHA-256 `b9e6c79a…`) and CMI's own 1994/2004/2016 tabular comparison (SHA-256 `c21b9482…`). Full provenance in `YAR_SOURCE_PROVENANCE.md` |
-| Finding | **YAR 2016 Rule VI(a) ALLOWS** salvage expenditure in general average where the operations were carried out to preserve the property from peril, *"subject to the provisions of paragraphs (b), (c) and (d)"*. The object asserted the opposite. Its first limb was **YAR 2004** Rule VI(a) — *"shall lie where they fall and shall not be allowed in general average"* — under a 2016 label. Its second limb (Art. 14 / SCOPIC excluded) is correct under 2016, but by **VI(d) alone** as a carve-out from an allowance; the label "particular charges" is in neither edition |
+| Finding | **YAR 2016 Rule VI(a) ALLOWS** salvage expenditure in general average where the operations were carried out to preserve the property from peril, subject to paragraphs (b), (c) and (d). The object asserted the opposite. Its first limb was the **YAR 2004** Rule VI(a) position — salvage payments left to lie where they fell and not allowed in GA — under a 2016 label. Its second limb (Art. 14 / SCOPIC excluded) is correct under 2016, but by **VI(d) alone** as a carve-out from an allowance; the label "particular charges" is in neither edition |
 | Severity vs TSCR-6 | **Higher.** TSCR-6's Rule D defect was 1994 wording with the same legal effect. This one **reverses the legal proposition** |
 | `YAR_DEFINITIONS.json` | `YAR-VI` **corrected** — VI(a) and VI(d) verbatim; VI(b)'s five gateways and VI(c) added as structured fields; `edition_history` recorded; object ID unchanged |
 | `CANDIDATE_TRAPS_AND_MISSING_POINTS.md` | `TRAP-SALVAGE-GA` rewritten. Object ID unchanged; **still a negative-knowledge object**. The Art. 14 / SCOPIC guard it was built for survives — VI(d) is exactly where "not allowed in general average" is still the right answer — and the trap now teaches the **edition boundary** rather than reversing a sentence. It also warns against the opposite over-correction ("YAR 2016 allows salvage", stated flat) |
@@ -57,7 +80,7 @@ Raised by TSCR-6, which surfaced the defect but was scoped not to fix it. Opened
 
 ### Downstream QP exposure — `DOWNSTREAM_QP_REPAIR_REQUIRED`
 
-The MIW estate (`D:\Marine-Intelligence-Weekly`) was searched read-only for the proposition, not
+The MIW estate (the local `Marine-Intelligence-Weekly` working copy) was searched read-only for the proposition, not
 re-audited generally. Result:
 
 | QP | Status |
@@ -83,3 +106,20 @@ it will also require regenerating the denormalised artefacts that carry the prop
 - Reference resolution: node 3 and node 4 resolve; **node 5 still references 3 non-existent objects** (`YAR-XVIII/XIX/XX`) — pre-existing, out of scope, recorded
 - Regression check: `YAR-D` and `YAR-PARAMOUNT` byte-for-byte unchanged from the TSCR-6 correction
 - Citation / Contradiction / Completeness / Integrity: **not re-run** — no automated validator exists in this repository; the checks above were performed deterministically and by hand
+
+## Validation — public-derived migration (2026-08-15)
+
+Session-local deterministic checks. **There is still no repository CI or validator**; these were run
+as one-off scripts and are not installed.
+
+- JSON parse (`YAR_DEFINITIONS.json`, `EVIDENCE_INDEX.json`, `YAR_SEQUENCE.json`): PASS
+- Object IDs unique (6/6), evidence IDs unique (3/3): PASS
+- Every asserted `evidence_id` resolves to an index entry; every `source_id` resolves to a registered source: PASS
+- `BROKEN PUBLIC→PRIVATE TRACEABILITY LINKS: 0`
+- `EVIDENCE HASH MISMATCHES: 0` — every `evidence_sha256` recomputed from the actual private vault
+- Evidence-hash continuity with the architecture prototype (`5e66d30`): identical, same passage bytes
+- `ABSOLUTE MACHINE PATHS IN PUBLIC DATA: 0`; conflict markers: 0; source PDFs committed: 0
+- Verification-state regression: 3 `primary_verified` / 3 `unverified_legacy`, unchanged by migration
+- Sequence resolution: nodes 1–4 resolve; **node 5 still references 3 non-existent objects** — unchanged
+- Verbatim-overlap inspection against the removed wording: longest shared run 7 words, all runs at 6–7 words being terms of art
+- Semantic regression, answered from the public layer alone: Rule A, Rule D, Rule Paramount, Rule VI, Rule VI(d), Rule XVII — all answerable; `YAR-C` and `YAR-XVII` answer subject to their recorded `known_defect`

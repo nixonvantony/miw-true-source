@@ -1,23 +1,246 @@
 {
- "register": "General Average — York-Antwerp Rules 2016 definitions",
+ "register": "General Average — York-Antwerp Rules public derived knowledge objects",
+ "architecture": "PUBLIC DERIVED / PRIVATE EVIDENCE",
+ "architecture_note": "This file holds MIW-authored propositions and verification pointers. It deliberately holds NO substantial source wording. Verbatim evidence is held privately and addressed through verification.evidence_id, resolved via general-average/EVIDENCE_INDEX.json. See PRIVATE_EVIDENCE_BOUNDARY.md.",
  "as_at": "2026-08-15",
- "verification_status": "VERIFIED",
- "primary_source": {
-  "title": "York-Antwerp Rules 2016",
-  "issuer": "Comité Maritime International (CMI)",
-  "url": "https://comitemaritime.org/wp-content/uploads/2023/01/YAR-2016-English-Version.pdf",
-  "retrieved": "2026-08-15",
-  "sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
-  "held": "not committed to this repository — see YAR_SOURCE_PROVENANCE.md",
-  "scope_verified": ["YAR-PARAMOUNT", "YAR-D", "YAR-VI"],
-  "note": "Objects other than those listed in scope_verified have NOT yet been checked against this source. See YAR_SOURCE_PROVENANCE.md for defects observed but deliberately left uncorrected under TS-P03 scope."
+ "evidence_index": "general-average/EVIDENCE_INDEX.json",
+ "verification_status_vocabulary": {
+  "primary_verified": "Checked word for word against a named primary source; an evidence record exists and its hashes are asserted here.",
+  "unverified_legacy": "Carried forward from before the primary-source regime. No evidence record exists and none is asserted. The proposition states what the object holds, not necessarily what the named edition says."
  },
- "definitions": [
-  {"instrument":"YAR 2016","article":"Rule Paramount","term":"reasonableness gate on all allowances","text":"In no case shall there be any allowance for sacrifice or expenditure unless reasonably made or incurred.","object_id":"YAR-PARAMOUNT","verified_against":"CMI YAR 2016 (sha256 0c364edb…), 2026-08-15","note":"A reasonableness gate, not a fault gate. Per the Rule of Interpretation it overrides both the lettered and the numbered Rules; it says nothing about the fault of the party claiming."},
-  {"instrument":"YAR 2016","article":"Rule A","term":"general average act","text":"There is a general average act when, and only when, any extraordinary sacrifice or expenditure is intentionally and reasonably made or incurred for the common safety for the purpose of preserving from peril the property involved in a common maritime adventure.","object_id":"YAR-A"},
-  {"instrument":"YAR 2016","article":"Rule C","term":"losses allowed in GA","text":"Only such losses, damages or expenses which are the direct consequence of the general average act shall be allowed as general average. Loss or damage sustained by the cargo or ship as a consequence of delay, whether on the voyage or subsequently, such as market loss, is not allowed as general average.","object_id":"YAR-C"},
-  {"instrument":"YAR 2016","article":"Rule D","term":"fault and GA","text":"Rights to contribution in general average shall not be affected, though the event which gave rise to the sacrifice or expenditure may have been due to the fault of one of the parties to the common maritime adventure, but this shall not prejudice any remedies or defences which may be open against or to that party in respect of such fault.","object_id":"YAR-D","verified_against":"CMI YAR 2016 (sha256 0c364edb…), 2026-08-15","note":"Corrected 2026-08-15 (TSCR-6). The prior text read 'parties to the adventure' with a semicolon before 'but' — that is the YAR 1994 wording, carried under a YAR 2016 label. Rule D preserves the right to contribution notwithstanding fault and relocates the consequence of fault into remedies and defences under the applicable law; it does not bar the party at fault from claiming."},
-  {"instrument":"YAR 2016","article":"Rule VI","term":"salvage remuneration in GA","text":"(a) Expenditure incurred by the parties to the common maritime adventure in the nature of salvage, whether under contract or otherwise, shall be allowed in general average provided that the salvage operations were carried out for the purpose of preserving from peril the property involved in the common maritime adventure and subject to the provisions of paragraphs (b), (c) and (d). … (d) Special compensation payable to a salvor by the shipowner under Article 14 of the International Convention on Salvage, 1989 to the extent specified in paragraph 4 of that Article or under any other provision similar in substance (such as SCOPIC) shall not be allowed in general average and shall not be considered a salvage expenditure as referred to in paragraph (a) of this Rule.","text_scope":"Paragraphs (a) and (d) verbatim — these are the two limbs that carry the legal proposition. Paragraphs (b) and (c) are represented structurally in the fields below rather than reproduced, to keep source reproduction in this public repository to the minimum the object model requires. See YAR_SOURCE_PROVENANCE.md.","paragraph_b_gateways":"Notwithstanding (a), where the parties to the common maritime adventure have separate contractual or legal liability to salvors, salvage shall only be allowed should any of five stated circumstances arise: (i) a subsequent accident or other circumstances resulting in loss or damage to property during the voyage that results in significant differences between salved and contributory values; (ii) significant general average sacrifices; (iii) salved values manifestly incorrect together with a significantly incorrect apportionment of salvage expenses; (iv) any party to the salvage has paid a significant proportion of salvage due from another party; (v) a significant proportion of the parties have satisfied the salvage claim on substantially different terms. For limb (v) no regard is had to interest, currency correction or the legal costs of either the salvor or the contributing interest.","paragraph_c":"Salvage expenditures referred to in paragraph (a) include any salvage remuneration in which the skill and efforts of the salvors in preventing or minimising damage to the environment, such as is referred to in Article 13 paragraph 1(b) of the International Convention on Salvage, 1989, have been taken into account.","object_id":"YAR-VI","verified_against":"CMI YAR 2016 (sha256 0c364edb…), 2026-08-15","note":"Corrected 2026-08-15 (TSCR-9). The prior text read 'Salvage payments, including interest and legal costs, shall not be allowed in general average' and treated Article 14 / SCOPIC special compensation as 'particular charges'. The first limb was the YAR 2004 Rule VI(a) position carried under a YAR 2016 label — an inversion of the legal proposition, not merely a source-fidelity defect. YAR 2016 Rule VI(a) ALLOWS salvage expenditure in general average where the operation was carried out to preserve the property from peril, subject to (b), (c) and (d). The exclusion in the 2016 edition is confined to VI(d): Article 14 special compensation and SCOPIC. The phrase 'particular charges' appears in neither edition and was not source text.","edition_history":"YAR 1994 Rule VI(a) allowed salvage expenditure in general average. YAR 2004 Rule VI(a) removed it — salvage payments 'shall lie where they fall and shall not be allowed in general average', subject only to a credit/debit proviso where one party paid another's proportion. YAR 2016 Rule VI(a) restores a QUALIFIED allowance. Verified 2026-08-15 against CMI YAR 2016 (sha256 0c364edb…), CMI YAR 2004 (sha256 b9e6c79a…) and the CMI 1994/2004/2016 tabular comparison (sha256 c21b9482…)."},
-  {"instrument":"YAR 2016","article":"Rule XVII","term":"contributory values","text":"The contributory value of the property shall be the value at the time and place when and where the adventure ends, determined in accordance with the contract of affreightment and the law applicable thereto. The value of cargo shall be the value at the time of discharge, ascertained from the commercial invoice rendered to the receiver or, if there is no such invoice, from the shipped value. The value of the ship shall be the value at the time of discharge, ascertained from the market value or, if there is no market value, from the insured value. The value of freight at risk shall be the amount at risk under the contract of affreightment.","object_id":"YAR-XVII"}
+ "verification_summary": {
+  "primary_verified": [
+   "YAR-PARAMOUNT",
+   "YAR-D",
+   "YAR-VI"
+  ],
+  "unverified_legacy": [
+   "YAR-A",
+   "YAR-C",
+   "YAR-XVII"
+  ],
+  "note": "Migration to the public-derived model did NOT change any object's verification state. Three objects were verified before it and three were not; that is unchanged."
+ },
+ "residual_missing_objects": {
+  "objects": [
+   "YAR-XVIII",
+   "YAR-XIX",
+   "YAR-XX"
+  ],
+  "status": "DO NOT EXIST. Referenced by YAR_SEQUENCE node 5, which remains unvalidated. Not created by this migration."
+ },
+ "objects": [
+  {
+   "object_id": "YAR-PARAMOUNT",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule Paramount",
+   "term": "reasonableness gate on all allowances",
+   "proposition": "The Rule Paramount conditions every allowance in the adjustment on the reasonableness of the sacrifice or expenditure: nothing is allowed unless it was reasonably made or incurred. Under the Rule of Interpretation it overrides both the lettered and the numbered Rules, so it operates as a general gate on admissibility and quantum rather than as one rule among others. Its test is directed at the quality of the act, not at the identity or culpability of the party claiming; it therefore contains no fault bar, and treating it as one misattributes to the Rules a consequence that comes, if at all, from the applicable law.",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016",
+    "evidence_id": "EVID-YAR-2016-PARAMOUNT",
+    "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+    "evidence_sha256": "8b402028e01e3390521a90b14d655fe1d2f50db432e659c1d9e93add40beee45",
+    "retrieved": "2026-08-15",
+    "verification_note": "Created and checked word for word against the CMI primary source 2026-08-15 under TSCR-6."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-RULE-D-FAULT"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#3"
+    ],
+    "related_objects": [
+     "YAR-D"
+    ]
+   },
+   "edition_history": [],
+   "trap_note": "Commonly misread as a fault gate. It is a reasonableness gate; the fault question belongs to Rule D and to the applicable law."
+  },
+  {
+   "object_id": "YAR-A",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule A",
+   "term": "general average act",
+   "proposition": "A general average act arises only where four requirements are satisfied together: the sacrifice or expenditure must be extraordinary; it must be intentional; it must be reasonable; and it must be directed at the common safety, meaning the preservation from peril of the property committed to a common maritime adventure. The test is both cumulative and exclusive — Rule A recognises no general average act that fails any one of the four — which is what keeps ordinary operating expenditure, accidental or unintended loss, and measures taken to protect a single interest outside general average altogether.",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "unverified_legacy",
+    "source_id": null,
+    "evidence_id": null,
+    "source_sha256": null,
+    "evidence_sha256": null,
+    "retrieved": null,
+    "verification_note": "NOT checked against the primary source. Carried forward from before the primary-source regime introduced by TSCR-6. No evidence record exists, and none is asserted.",
+    "known_defect": "Observed while verifying other objects: the held content corresponded to YAR 2016 Rule A paragraph 1 only; paragraph 2 is not held. Accurate as far as it goes, incomplete as a statement of Rule A. Recorded, not corrected — TS-P06 scope."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-RULE-A-C",
+     "TRAP-GA-PA"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#1"
+    ],
+    "related_objects": [
+     "YAR-C"
+    ]
+   },
+   "edition_history": [],
+   "trap_note": "The four limbs are cumulative. Treating any casualty loss as general average drops the extraordinary, intentional and common-safety requirements at once."
+  },
+  {
+   "object_id": "YAR-C",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule C",
+   "term": "losses allowed in general average",
+   "proposition": "Allowance in general average reaches only loss, damage or expense arising as a direct consequence of the general average act; consequences more remote than that are not admitted, so Rule C operates as the causation filter applied after Rule A has identified the act. Loss or damage suffered by ship or cargo because of delay is excluded, whether the delay occurs on the voyage or afterwards, and market loss is the standard illustration of what that exclusion catches.",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "unverified_legacy",
+    "source_id": null,
+    "evidence_id": null,
+    "source_sha256": null,
+    "evidence_sha256": null,
+    "retrieved": null,
+    "verification_note": "NOT checked against the primary source. The proposition states what this object holds, which is NOT the full YAR 2016 rule — see known_defect. No evidence record exists.",
+    "known_defect": "KNOWN PRE-MIGRATION CONTENT DEFECT. The held content reproduced YAR 1994 Rule C. YAR 2016 Rule C.2 (no allowance for loss, damage or expense from environmental damage or the escape or release of pollutants) is NOT held at all, and C.3 was paraphrased. The edition label on this object therefore overstates it. Recorded, not corrected — the migration is not authorised to make legal corrections."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-RULE-A-C",
+     "TRAP-GA-PA"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#2"
+    ],
+    "related_objects": [
+     "YAR-A"
+    ]
+   },
+   "edition_history": [],
+   "trap_note": "Do not rely on this object for the YAR 2016 environmental-damage exclusion: C.2 is not held here."
+  },
+  {
+   "object_id": "YAR-D",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule D",
+   "term": "fault and general average",
+   "proposition": "Fault on the part of a party to the common maritime adventure does not of itself defeat, reduce or otherwise affect rights to contribution in general average, even where the fault caused the very event that gave rise to the sacrifice or expenditure. Rule D separates the adjustment from the question of blame: the contribution is admitted and the adjustment proceeds, while the consequences of the fault are relocated to whatever remedies and defences the applicable law and the contract make available against or in favour of that party. The party at fault is therefore not barred from claiming by reason of that fault alone — but the rule equally preserves the fault-based remedies, so it does not make general average payable regardless of fault.",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016",
+    "evidence_id": "EVID-YAR-2016-D",
+    "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+    "evidence_sha256": "999496d6a48e0c684a4d6b80391e2a048ee44acedef1f4d5fd9b69a261bfd72b",
+    "retrieved": "2026-08-15",
+    "verification_note": "Corrected 2026-08-15 under TSCR-6. The superseded object carried YAR 1994 wording under a YAR 2016 label — same legal effect, wrong text."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-RULE-D-FAULT"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#3"
+    ],
+    "related_objects": [
+     "YAR-PARAMOUNT"
+    ]
+   },
+   "edition_history": [
+    {
+     "edition": "1994",
+     "position": "Same effect, different wording — 'parties to the adventure', semicolon before the remedies limb.",
+     "source_id": "CMI-YAR-TABULAR-1994-2004-2016"
+    },
+    {
+     "edition": "2016",
+     "position": "Current wording, verified.",
+     "source_id": "CMI-YAR-2016"
+    }
+   ],
+   "trap_note": "The inversion to guard against is 'a party at fault cannot claim in general average'. The over-correction to guard against is 'general average is payable regardless of fault'. Rule D is neither: it preserves the contribution and preserves the fault remedies. Any bar on a shipowner at fault comes from the applicable law, which is why the New Jason Clause exists."
+  },
+  {
+   "object_id": "YAR-VI",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule VI",
+   "term": "salvage remuneration in general average",
+   "proposition": "Expenditure of a salvage character, borne by parties to the common maritime adventure under a salvage contract or otherwise, is allowable in general average under Rule VI(a), provided the salvage operations were undertaken to preserve the imperilled property in that adventure, and subject to paragraphs (b), (c) and (d). Where the parties bear separate contractual or legal liability to the salvors, paragraph (b) narrows the allowance to five defined circumstances, each turning on a significant distortion between what a party in fact bore and what a correct apportionment would have required — a later accident or loss during the voyage producing significant differences between salved and contributory values; significant general average sacrifices; manifestly incorrect salved values combined with a significantly incorrect apportionment; payment by one party of a significant proportion of salvage due from another; or settlement by a significant proportion of the parties on substantially different terms, that last limb disregarding interest, currency correction and the legal costs of salvor and contributing interest alike. Paragraph (c) confirms that salvage remuneration reflecting the salvors' skill and effort in preventing or minimising environmental damage, as taken into account under Article 13(1)(b) of the Salvage Convention 1989, forms part of the allowable salvage expenditure. Paragraph (d) then puts Article 14 outside the adjustment altogether: where a shipowner owes a salvor special compensation under that article, measured as Article 14(4) provides, or owes anything substantially equivalent to it such as SCOPIC, that liability is neither allowable in general average nor counted as salvage expenditure for the purposes of paragraph (a).",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016",
+    "evidence_id": "EVID-YAR-2016-VI",
+    "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+    "evidence_sha256": "d9f97dddb7ae13dd96237166da6a70c78ddb10e6b5a3d4aac528e2e004a2855f",
+    "retrieved": "2026-08-15",
+    "verification_note": "Corrected 2026-08-15 under TSCR-9. The superseded object carried the YAR 2004 blanket exclusion under a YAR 2016 label and mislabelled Article 14 / SCOPIC compensation as particular charges — an inversion of the legal proposition."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-SALVAGE-GA"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#4"
+    ],
+    "related_objects": []
+   },
+   "edition_history": [
+    {
+     "edition": "1994",
+     "position": "Salvage expenditure allowed in general average.",
+     "source_id": "CMI-YAR-TABULAR-1994-2004-2016"
+    },
+    {
+     "edition": "2004",
+     "position": "Allowance removed — salvage payments left to lie where they fell, subject only to a credit and debit proviso where one party had paid another's proportion.",
+     "source_id": "CMI-YAR-2004"
+    },
+    {
+     "edition": "2016",
+     "position": "Allowance restored in qualified form under VI(a), with the exclusion confined to VI(d).",
+     "source_id": "CMI-YAR-2016"
+    }
+   ],
+   "trap_note": "Two distinct errors. First, the edition trap: asserting that salvage is not allowed in general average, which is the 2004 position stated under a 2016 label. Second, the classification error: treating Article 14 or SCOPIC special compensation as ordinary Rule VI general average expenditure, when VI(d) excludes it from general average and from the definition of salvage expenditure in VI(a)."
+  },
+  {
+   "object_id": "YAR-XVII",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule XVII",
+   "term": "contributory values",
+   "proposition": "Contribution is apportioned by reference to contributory value — the value of each interest assessed when and where the adventure ends, under the contract of affreightment and its governing law. On the footing this object currently states: cargo is taken at its value on discharge, drawn from the commercial invoice rendered to the receiver or, absent one, from the shipped value; the ship at its market value on discharge, or at insured value where no market value exists; and freight at the amount standing at risk under the contract of affreightment. Contributory value supplies the denominator of the adjustment — it fixes the proportion each interest bears — and is to be distinguished from the amount made good, which is what an interest recovers for its own sacrifice.",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "unverified_legacy",
+    "source_id": null,
+    "evidence_id": null,
+    "source_sha256": null,
+    "evidence_sha256": null,
+    "retrieved": null,
+    "verification_note": "NOT checked against the primary source. The proposition states what this object holds. No evidence record exists, and none is asserted.",
+    "known_defect": "KNOWN PRE-MIGRATION CONTENT DEFECT. The held content was a paraphrase, not the YAR 2016 wording; YAR 2016 Rule XVII(a)(i) works from the actual net values of the property at the termination of the common maritime adventure. Recorded, not corrected — TS-P06 scope."
+   },
+   "relationships": {
+    "traps": [],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#5"
+    ],
+    "related_objects": []
+   },
+   "edition_history": [],
+   "trap_note": "Contributory value is not the amount made good. This object is a paraphrase and must not be cited as the 2016 wording."
+  }
  ]
 }

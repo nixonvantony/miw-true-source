@@ -1,0 +1,12 @@
+# Guards for the PUBLIC DERIVED / PRIVATE EVIDENCE boundary.
+# See PRIVATE_EVIDENCE_BOUNDARY.md. These are a safety net, not the boundary itself:
+# the private evidence vault lives outside this repository entirely.
+
+# No primary-source captures in the public repository, ever.
+*.pdf
+
+# No vault materialised inside the working tree.
+_private-evidence/
+_prototype-private-evidence/
+MIW-Source-Vault/
+vault/
