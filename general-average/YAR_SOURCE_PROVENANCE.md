@@ -62,10 +62,10 @@ Verified against the primary source, word for word:
 
 ### Rule D — what it actually does
 
-> Rights to contribution in general average shall not be affected, though the event which gave rise to
-> the sacrifice or expenditure may have been due to the fault of one of the parties to the common
-> maritime adventure, but this shall not prejudice any remedies or defences which may be open against
-> or to that party in respect of such fault.
+*Rule text not reproduced here.* The verified wording is held once, in the canonical structured object
+**`YAR-D`** (`YAR_DEFINITIONS.json`), checked word for word against the CMI primary source identified
+in the table above (sha256 `0c364edb…`, retrieved 2026-08-15). What follows is the proposition that
+reading established.
 
 Rule D **preserves** the right to contribution notwithstanding the fault of a party, and **relocates**
 the consequence of that fault into remedies and defences under the applicable law. It does **not** bar
@@ -76,13 +76,12 @@ York-Antwerp Rules — which is exactly why the **New Jason Clause** exists.
 
 ### Rule Paramount — what it actually governs
 
-> In no case shall there be any allowance for sacrifice or expenditure unless reasonably made or
-> incurred.
+*Rule text not reproduced here.* The verified wording is held once, in the canonical structured object
+**`YAR-PARAMOUNT`** (`YAR_DEFINITIONS.json`), created and checked against the same primary source.
 
-A **reasonableness gate**. Under the Rule of Interpretation it overrides both the lettered and the
-numbered Rules — *"Except as provided by the Rule Paramount and the numbered Rules, general average
-shall be adjusted according to the lettered Rules"* — but its subject matter is whether the sacrifice
-or expenditure was reasonable, not who was at fault. The pre-correction claim that it "bars GA where
+A **reasonableness gate**: it allows nothing unless the sacrifice or expenditure was *reasonably made
+or incurred*. Under the Rule of Interpretation it overrides both the lettered and the numbered Rules,
+but its subject matter is whether the sacrifice or expenditure was reasonable, not who was at fault. The pre-correction claim that it "bars GA where
 fault of party claiming" was a **misattribution**, not an overstatement: the Rule Paramount says
 nothing whatever about fault.
 
@@ -95,17 +94,19 @@ object was not the text it claimed to be, and has been corrected to the 2016 wor
 
 ### Rule VI — what it actually does (TSCR-9)
 
-> (a) Expenditure incurred by the parties to the common maritime adventure in the nature of salvage,
-> whether under contract or otherwise, **shall be allowed in general average** provided that the salvage
-> operations were carried out for the purpose of preserving from peril the property involved in the
-> common maritime adventure and subject to the provisions of paragraphs (b), (c) and (d)
+*Rule text not reproduced here.* The verified wording of paragraphs **(a)** and **(d)** is held once,
+in the canonical structured object **`YAR-VI`** (`YAR_DEFINITIONS.json`), checked word for word
+against the CMI primary source identified in the table above. Paragraphs **(b)** and **(c)** are held
+there structurally, in the `paragraph_b_gateways` and `paragraph_c` fields, rather than reproduced.
 
-and, at the other end of the same Rule:
+The two limbs that carry the correction are:
 
-> (d) Special compensation payable to a salvor by the shipowner under Article 14 of the International
-> Convention on Salvage, 1989 to the extent specified in paragraph 4 of that Article or under any other
-> provision similar in substance (such as SCOPIC) **shall not be allowed in general average** and shall
-> not be considered a salvage expenditure as referred to in paragraph (a) of this Rule.
+- **VI(a)** — expenditure in the nature of salvage **shall be allowed in general average**, provided
+  the salvage operations were carried out to preserve the property in the common maritime adventure
+  from peril, and **subject to paragraphs (b), (c) and (d)**.
+- **VI(d)** — special compensation payable to a salvor by the shipowner under **Article 14** of the
+  International Convention on Salvage, 1989, or any provision similar in substance such as **SCOPIC**,
+  **shall not be allowed in general average**, and is not salvage expenditure under paragraph (a).
 
 The pre-correction `YAR-VI` object read *"Salvage payments, including interest and legal costs, shall
 not be allowed in general average"* and described Art. 14 / SCOPIC compensation as *"particular
@@ -127,7 +128,7 @@ charges"*. Set against the two paragraphs above:
 |---|---|---|
 | YAR 1994 | *"Expenditure incurred by the parties to the adventure in the nature of salvage … shall be allowed"* | CMI tabular comparison, sha256 `c21b9482…` |
 | YAR 2004 | *"Salvage payments … shall lie where they fall and shall not be allowed in general average"*, save a credit/debit proviso where one party paid another's proportion | CMI YAR 2004, sha256 `b9e6c79a…` |
-| YAR 2016 | *"shall be allowed in general average provided that …"* and *"subject to the provisions of paragraphs (b), (c) and (d)"* | CMI YAR 2016, sha256 `0c364edb…` |
+| YAR 2016 | Allowance **restored, qualified** — wording held in object `YAR-VI`, not repeated here | CMI YAR 2016, sha256 `0c364edb…` |
 
 The treatment therefore moved **twice**. The 2004 exclusion is a real historical proposition and
 remains correct **about YAR 2004**; it is wrong only when presented as the current rule. That is the

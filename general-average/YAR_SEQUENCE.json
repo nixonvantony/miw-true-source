@@ -1,7 +1,8 @@
 {
  "sequence_id": "GA-CANONICAL-CHAIN",
- "as_at": "2026-08-13",
- "verification_status": "VALIDATED against objects",
+ "as_at": "2026-08-15",
+ "verification_status": "INTERNALLY VALIDATED against referenced structured objects — this is NOT primary-source verification, which is recorded per object in YAR_DEFINITIONS.json (primary_source.scope_verified) and in YAR_SOURCE_PROVENANCE.md",
+ "validation_scope": "Nodes 1-4 resolve to defined objects. Node 5 references YAR-XVIII, YAR-XIX and YAR-XX, which do NOT exist in YAR_DEFINITIONS.json; that node is therefore NOT validated. Logged as a residual defect, outside the TSCR-6 / TSCR-9 correction scope.",
  "reasoning_chain": [
   {"node":1,"name":"Extraordinary sacrifice/expense intentionally and reasonably made for common safety (Rule A)","governing_objects":["YAR-A"]},
   {"node":2,"name":"Losses allowed: direct consequence of GA act (Rule C); excluded: delay consequences (Rule C)","governing_objects":["YAR-C"]},
