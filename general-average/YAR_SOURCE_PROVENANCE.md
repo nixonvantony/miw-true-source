@@ -1,6 +1,6 @@
 # YAR SOURCE PROVENANCE
 
-Package: general-average · created 2026-08-15 under **TS-P03 / TSCR-6** · extended 2026-08-15 under **TSCR-9**
+Package: general-average · created 2026-08-15 under **TS-P03 / TSCR-6** · extended 2026-08-15 under **TSCR-9** · extended 2026-08-16 under **TS-P07 (Rule XXI)**
 
 ## Why this file exists
 
@@ -56,8 +56,77 @@ Verified against the primary source, word for word:
   word for word and now held as private evidence, (b) and (c) never held verbatim and carried by the
   MIW proposition — see the rights note below)
 
+Added 2026-08-16 under **TS-P07**, verified against the primary sources:
+
+- `YAR-XXI-A` — Rule XXI(a), and verified as **unchanged** by comparing the maintained text against
+  CMI's superseded posting
+- `YAR-XXI-B` — Rule XXI(b), current basis (created; the rule was previously not held at all)
+- `YAR-XXI-B-ORIGINAL` — Rule XXI(b) as originally adopted, verified against CMI's superseded posting
+  and held as a **SUPERSEDED** state
+
 **Nothing else in this package has been checked against the primary source.** `YAR-A`, `YAR-C` and
 `YAR-XVII` remain on their pre-2026-08-15 footing.
+
+## Second primary source — CMI's superseded posting (TS-P07)
+
+Establishing that Rule XXI(b) *changed*, and that Rule XXI(a) *did not*, needs both states of the text.
+CMI publishes both.
+
+| Field | Value |
+|---|---|
+| Title | York-Antwerp Rules 2016 (English version) — CMI's superseded posting, labelled **"(old)"** on the CMI YAR page |
+| Source ID | `CMI-YAR-2016-PRE-2022` |
+| URL | `https://comitemaritime.org/wp-content/uploads/2023/01/YAR-2016-English-with-Rule-XVII-correction-1.pdf` |
+| Retrieved | 2026-08-16 (HTTP 200, CMI's own domain, no redirect) |
+| Size | 214,432 bytes · 12 pages |
+| SHA-256 | `2d0472e8ceee67bd40956bf348e1bc1789e8e7ede9bf93de6c42b0fb6ba1ede6` |
+| Currency | Already carries the **Genoa Rule XVII** correction, but **predates** the Antwerp October 2022 Rule XXI(b) amendment. It is therefore the primary witness to the superseded interest basis, and to nothing later |
+
+**Re-verification of the maintained text, 2026-08-16.** `CMI-YAR-2016` was retrieved again from the same
+CMI URL and is **byte-identical** to the TSCR-6 and TSCR-9 records — same 291,174 bytes, same SHA-256
+`0c364edb…`. The source identity stands unchanged across three sessions.
+
+**An acquisition hazard worth recording.** Neither filename nor file date distinguishes these two
+postings correctly. The maintained text has the *plainer* filename and a PDF creation date of
+2023-01-26; the superseded posting has the more specific-looking filename and a **later** creation date
+of 2024-08-06. Anything that sorts by name or date will pick up the LIBOR text. The reliable
+discriminator is Rule XXI(b) itself — LIBOR means the superseded posting. Recorded as `W7`.
+
+## The two CMI Assembly interventions — distinguished (TS-P07)
+
+The maintained text is not the text adopted in New York in May 2016. Two Assembly interventions sit
+between them, and they are **different events on different rules**:
+
+| Event | Rule | Nature |
+|---|---|---|
+| CMI Assembly, **Genoa, September** (2016) | **Rule XVII** | Restoration of a sentence-ending dropped in error from the adopted text; the wording had stood in earlier versions |
+| CMI Assembly, **Antwerp, October 2022** | **Rule XXI(b)** | Technical amendment re-basing the interest benchmark |
+
+The Genoa footnote gives the month but **not the year**; 2016 is inferred from its own reference to the
+New York adoption of May 2016 and is recorded as an inference rather than asserted as a dated fact.
+
+Genoa is recorded here and in `YAR_INSTRUMENT_REGISTER.md` at instrument level only. `YAR-XVII` is
+`unverified_legacy` with a recorded defect of its own and was **not** touched under TS-P07 — verifying
+it against the maintained text is TS-P06 work.
+
+### Rule XXI — what it actually provides (TS-P07)
+
+*Rule text not reproduced here.* The verified wording is held in the private evidence layer as
+`EVID-YAR-2016-XXI` (maintained text, both paragraphs) and `EVID-YAR-2016-XXI-B-ORIGINAL` (the
+superseded paragraph (b)). The public objects carry the propositions and the pointers.
+
+- **Paragraph (a) — the period.** Interest runs on expenditure, sacrifices and allowances until three
+  months after the adjustment is **issued**, with credit for payments on account and for the deposit
+  fund. **Unchanged** by the October 2022 amendment — established positively, by comparing the two CMI
+  postings, not inferred from the footnote's placement alone.
+- **Paragraph (b) — the rate, current.** Re-struck for each calendar year at the **USD Prime Rate plus
+  2 per cent per annum**, on the figure the **Wall Street Journal** carried for that year's **opening
+  banking day**. A US dollar rate whatever the adjustment currency.
+- **Paragraph (b) — the rate, superseded.** As adopted: **twelve-month ICE LIBOR in the currency of the
+  adjustment plus four percentage points**, with a twelve-month US dollar fallback. The amendment moved
+  the benchmark, moved the margin, and removed the currency-matching limb altogether — an answer that
+  changes only the benchmark is still wrong.
+- **Edition.** Unchanged and still **York-Antwerp Rules 2016**. There is no YAR 2022.
 
 ## Findings
 

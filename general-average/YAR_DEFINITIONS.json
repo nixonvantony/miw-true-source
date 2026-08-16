@@ -2,7 +2,7 @@
  "register": "General Average — York-Antwerp Rules public derived knowledge objects",
  "architecture": "PUBLIC DERIVED / PRIVATE EVIDENCE",
  "architecture_note": "This file holds MIW-authored propositions and verification pointers. It deliberately holds NO substantial source wording. Verbatim evidence is held privately and addressed through verification.evidence_id, resolved via general-average/EVIDENCE_INDEX.json. See PRIVATE_EVIDENCE_BOUNDARY.md.",
- "as_at": "2026-08-15",
+ "as_at": "2026-08-16",
  "evidence_index": "general-average/EVIDENCE_INDEX.json",
  "verification_status_vocabulary": {
   "primary_verified": "Checked word for word against a named primary source; an evidence record exists and its hashes are asserted here.",
@@ -12,14 +12,17 @@
   "primary_verified": [
    "YAR-PARAMOUNT",
    "YAR-D",
-   "YAR-VI"
+   "YAR-VI",
+   "YAR-XXI-A",
+   "YAR-XXI-B",
+   "YAR-XXI-B-ORIGINAL"
   ],
   "unverified_legacy": [
    "YAR-A",
    "YAR-C",
    "YAR-XVII"
   ],
-  "note": "Migration to the public-derived model did NOT change any object's verification state. Three objects were verified before it and three were not; that is unchanged."
+  "note": "Migration to the public-derived model did NOT change any object's verification state. Three objects were verified before it and three were not; that is unchanged. Added 2026-08-16: three Rule XXI objects, all primary_verified. YAR-XXI-B-ORIGINAL is primary_verified against CMI's superseded posting - it is an accurate record of a SUPERSEDED state, not a statement of current law, and carries no reasoning node."
  },
  "residual_missing_objects": {
   "objects": [
@@ -241,6 +244,138 @@
    },
    "edition_history": [],
    "trap_note": "Contributory value is not the amount made good. This object is a paraphrase and must not be cited as the 2016 wording."
+  },
+  {
+   "object_id": "YAR-XXI-A",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule XXI(a)",
+   "term": "interest on allowances - the period it runs for",
+   "proposition": "Interest is allowed on general average expenditure, on sacrifices and on allowances, and it does not stop when the adjustment is delivered: it keeps running for a further three months measured from the day the adjustment is issued. Sums a contributing interest has already paid on account, and sums drawn from the general average deposit fund, are brought into account, so a contributor is not charged interest on money it has already provided. Fixing the end point by reference to issue of the adjustment - rather than to the date of the general average act, or to the date of settlement - is what gives the paragraph its practical effect: the three-month tail is a settlement window, not a measure of how long the casualty or the adjustment took.",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016",
+    "evidence_id": "EVID-YAR-2016-XXI",
+    "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+    "evidence_sha256": "9ecea9d25a5f4414fc545b09189acfa7ffb286206d38f0a85e69389e27c61356",
+    "retrieved": "2026-08-16",
+    "verification_note": "Checked word for word against the maintained CMI text 2026-08-16. Also compared against CMI's superseded posting (source CMI-YAR-2016-PRE-2022): paragraph (a) is textually identical in both, which is the positive evidence that the October 2022 technical amendment did not reach it. The amendment footnote in the maintained text is attached to paragraph (b) alone."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-YAR-XXI-LIBOR"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#6"
+    ],
+    "related_objects": [
+     "YAR-XXI-B"
+    ]
+   },
+   "edition_history": [
+    {
+     "edition": "2016 (as adopted, New York, May 2016)",
+     "position": "Same text as the maintained version. Not altered by any later correction or amendment.",
+     "source_id": "CMI-YAR-2016-PRE-2022"
+    },
+    {
+     "edition": "2016 (maintained text, after Antwerp, October 2022)",
+     "position": "Unchanged, and verified as identical to the as-adopted paragraph.",
+     "source_id": "CMI-YAR-2016"
+    }
+   ],
+   "trap_note": "The three months run from ISSUE of the adjustment, not from the general average act or from settlement. Do not assume the October 2022 amendment moved this paragraph - it did not."
+  },
+  {
+   "object_id": "YAR-XXI-B",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016 (as amended, Antwerp, October 2022)",
+   "locator": "Rule XXI(b)",
+   "term": "interest on allowances - the rate, current basis",
+   "proposition": "The interest rate is not set once for the life of the adjustment; it is re-struck for each calendar year in which interest accrues. For any such year the rate is the USD Prime Rate with two percentage points added - the Rules put the addition as 2 per cent per annum - and the Prime Rate figure is the one the Wall Street Journal carried for that year's first banking day. Two features of this are easy to miss and both matter in an adjustment. The benchmark is a United States dollar rate whatever currency the adjustment is drawn in, so there is no matching of rate to money of account; and because the figure is captured on one stated day, movement in the Prime Rate later in that year does not disturb the rate already fixed for it. This basis replaced a LIBOR-linked mechanism by technical amendment in October 2022, the benchmark having been withdrawn; the edition was not renumbered and remains the York-Antwerp Rules 2016.",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016",
+    "evidence_id": "EVID-YAR-2016-XXI",
+    "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+    "evidence_sha256": "9ecea9d25a5f4414fc545b09189acfa7ffb286206d38f0a85e69389e27c61356",
+    "retrieved": "2026-08-16",
+    "verification_note": "Checked word for word against the maintained CMI text 2026-08-16. The maintained text carries a footnote to this paragraph recording that it was amended for technical reasons by the CMI Assembly at Antwerp in October 2022. No LIBOR reference survives anywhere in the maintained Rule XXI."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-YAR-XXI-LIBOR"
+    ],
+    "reasoning_nodes": [
+     "GA-CANONICAL-CHAIN#6"
+    ],
+    "related_objects": [
+     "YAR-XXI-A",
+     "YAR-XXI-B-ORIGINAL"
+    ]
+   },
+   "edition_history": [
+    {
+     "edition": "2016 (as adopted, New York, May 2016)",
+     "position": "A LIBOR-linked basis, matched to the currency of the adjustment, with a four percentage point margin. SUPERSEDED - held separately as YAR-XXI-B-ORIGINAL.",
+     "source_id": "CMI-YAR-2016-PRE-2022"
+    },
+    {
+     "edition": "2016 (as amended, CMI Assembly, Antwerp, October 2022)",
+     "position": "Current basis. USD Prime Rate plus 2 per cent per annum, on the figure the Wall Street Journal carried for the opening banking day of the calendar year. Recorded in the maintained CMI text by a footnote attached to this paragraph alone.",
+     "source_id": "CMI-YAR-2016"
+    }
+   ],
+   "trap_note": "This is the paragraph the October 2022 amendment changed, and the only one. A LIBOR-based answer is the pre-amendment position; see TRAP-YAR-XXI-LIBOR. There is no York-Antwerp Rules 2022 edition."
+  },
+  {
+   "object_id": "YAR-XXI-B-ORIGINAL",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016 (as adopted, New York, May 2016)",
+   "locator": "Rule XXI(b)",
+   "term": "interest on allowances - the rate, SUPERSEDED original basis",
+   "proposition": "SUPERSEDED - this records the mechanism as first adopted in May 2016 and displaced in October 2022, and it states no part of the current position. The original paragraph worked from ICE LIBOR at the twelve-month tenor rather than from a prime rate, and it matched the benchmark to the money of account: the rate was the twelve-month ICE LIBOR for the currency the adjustment was drawn in, announced on the calendar year's opening banking day, with four percentage points added. Where no ICE LIBOR was announced for that currency the paragraph fell back to the twelve-month United States dollar tenor, again with four percentage points added. Every element has since moved - the benchmark, the margin, and the currency-matching limb, which has gone altogether. The object is kept because study material, average adjusters and commentary written before 2023 still describe general average interest this way, and a reader meeting that description needs to be able to place it rather than trust it.",
+   "proposition_authorship": "MIW",
+   "verification": {
+    "status": "primary_verified",
+    "source_id": "CMI-YAR-2016-PRE-2022",
+    "evidence_id": "EVID-YAR-2016-XXI-B-ORIGINAL",
+    "source_sha256": "2d0472e8ceee67bd40956bf348e1bc1789e8e7ede9bf93de6c42b0fb6ba1ede6",
+    "evidence_sha256": "1199a67797e1d7b7dee49e12b3322e1e04fc7356d566b6b91220d911a1c0b3f5",
+    "retrieved": "2026-08-16",
+    "verification_note": "Checked word for word against CMI's superseded posting of the 2016 text 2026-08-16. Verified as PRIMARY-SOURCE ACCURATE FOR A SUPERSEDED STATE: the object is a correct record of what the paragraph once said, and is not a statement of current law. It asserts no current effect and is deliberately excluded from the canonical reasoning chain."
+   },
+   "relationships": {
+    "traps": [
+     "TRAP-YAR-XXI-LIBOR"
+    ],
+    "reasoning_nodes": [],
+    "related_objects": [
+     "YAR-XXI-B"
+    ]
+   },
+   "edition_history": [
+    {
+     "edition": "2016 (as adopted, New York, May 2016)",
+     "position": "The basis stated by this object. Correct for its time.",
+     "source_id": "CMI-YAR-2016-PRE-2022"
+    },
+    {
+     "edition": "2016 (as amended, CMI Assembly, Antwerp, October 2022)",
+     "position": "This basis was replaced. The current basis is held as YAR-XXI-B.",
+     "source_id": "CMI-YAR-2016"
+    }
+   ],
+   "trap_note": "SUPERSEDED. Never cite as current. Its reasoning_nodes list is deliberately empty so that it cannot enter the canonical chain; it is reachable for identification and refutation only."
   }
- ]
+ ],
+ "superseded_objects": {
+  "objects": [
+   "YAR-XXI-B-ORIGINAL"
+  ],
+  "meaning": "Verified against primary source as a correct record of wording that has since been replaced. A superseded object is retained so that a stale claim can be identified and refuted rather than merely absent. It must never be cited as current law and must never appear in reasoning_chain governing_objects.",
+  "added": "2026-08-16"
+ }
 }

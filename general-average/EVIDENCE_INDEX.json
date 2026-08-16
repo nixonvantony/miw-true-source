@@ -1,12 +1,12 @@
 {
  "register": "General Average — public evidence index (metadata only)",
  "architecture": "PUBLIC DERIVED / PRIVATE EVIDENCE",
- "as_at": "2026-08-15",
+ "as_at": "2026-08-16",
  "public_counterpart_of": "the private MIW source-evidence vault; see PRIVATE_EVIDENCE_BOUNDARY.md",
  "contains_no_source_wording": true,
  "evidence_sha256_definition": "sha256 over the UTF-8 bytes of the verbatim passage held privately at private_location_key. It identifies the passage, not the file carrying it.",
  "location_key_model": "vault://<path> is a logical address resolved by local vault configuration. Absolute machine paths are prohibited in this repository.",
- "coverage_note": "Evidence exists only for objects whose verification status is primary_verified. YAR-A, YAR-C and YAR-XVII have NO evidence record; this is a truthful gap, not a missing link.",
+ "coverage_note": "Evidence exists only for objects whose verification status is primary_verified. YAR-A, YAR-C and YAR-XVII have NO evidence record; this is a truthful gap, not a missing link. Added 2026-08-16: Rule XXI evidence for the maintained text and for the superseded original paragraph (b).",
  "sources": [
   {
    "source_id": "CMI-YAR-2016",
@@ -36,6 +36,18 @@
    "retrieved": "2026-08-15",
    "sha256": "c21b948273e20f3a8dac0c0ccf55934bac43269f6e9faf4128a45ea677e6aeaf",
    "held": "not in this repository — edition-comparison source"
+  },
+  {
+   "source_id": "CMI-YAR-2016-PRE-2022",
+   "title": "York-Antwerp Rules 2016 (English version) - CMI's superseded posting, labelled \"(old)\" on the CMI YAR page",
+   "issuer": "Comite Maritime International (CMI)",
+   "url": "https://comitemaritime.org/wp-content/uploads/2023/01/YAR-2016-English-with-Rule-XVII-correction-1.pdf",
+   "retrieved": "2026-08-16",
+   "bytes": 214432,
+   "sha256": "2d0472e8ceee67bd40956bf348e1bc1789e8e7ede9bf93de6c42b0fb6ba1ede6",
+   "held": "not in this repository - metadata and hash only; no PDF held",
+   "role": "Evidence for the Rule XXI(b) mechanism as originally adopted. This posting already carries the Genoa Rule XVII correction but predates the Antwerp October 2022 Rule XXI(b) amendment, so it is the primary witness to the superseded interest basis.",
+   "caution": "Neither filename nor file date orders these two CMI postings: this superseded file carries a LATER PDF creation date (2024-08-06) than the maintained text (2023-01-26), and its filename looks more specific. Identify them by the CMI page labels and by which interest benchmark Rule XXI(b) names."
   }
  ],
  "evidence": [
@@ -82,6 +94,37 @@
    "private_location_key": "vault://cmi/yar/2016/rule-vi",
    "public_objects": [
     "YAR-VI"
+   ]
+  },
+  {
+   "evidence_id": "EVID-YAR-2016-XXI",
+   "source_id": "CMI-YAR-2016",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016",
+   "locator": "Rule XXI",
+   "verification_scope": "Rule XXI, complete text, both paragraphs (a) and (b), as carried by the maintained CMI text. The superscript footnote marker on paragraph (b) is an editorial reference and is excluded from the passage; the footnote sentence itself is not part of the rule and is recorded in the instrument register rather than hashed here.",
+   "source_sha256": "0c364edb0d165eeaa61ca48bbbe0bb58dce2d6500c7a1f3110d39fdf56f3c01c",
+   "evidence_sha256": "9ecea9d25a5f4414fc545b09189acfa7ffb286206d38f0a85e69389e27c61356",
+   "retrieved": "2026-08-16",
+   "private_location_key": "vault://cmi/yar/2016/rule-xxi",
+   "public_objects": [
+    "YAR-XXI-A",
+    "YAR-XXI-B"
+   ]
+  },
+  {
+   "evidence_id": "EVID-YAR-2016-XXI-B-ORIGINAL",
+   "source_id": "CMI-YAR-2016-PRE-2022",
+   "instrument": "York-Antwerp Rules",
+   "edition": "2016 (as adopted, May 2016)",
+   "locator": "Rule XXI(b)",
+   "verification_scope": "Rule XXI paragraph (b) only, as originally adopted and before the Antwerp October 2022 technical amendment. Paragraph (a) is not included here because it is unchanged and is covered by EVID-YAR-2016-XXI.",
+   "source_sha256": "2d0472e8ceee67bd40956bf348e1bc1789e8e7ede9bf93de6c42b0fb6ba1ede6",
+   "evidence_sha256": "1199a67797e1d7b7dee49e12b3322e1e04fc7356d566b6b91220d911a1c0b3f5",
+   "retrieved": "2026-08-16",
+   "private_location_key": "vault://cmi/yar/2016/rule-xxi-b-original",
+   "public_objects": [
+    "YAR-XXI-B-ORIGINAL"
    ]
   }
  ]

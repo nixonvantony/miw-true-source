@@ -3,9 +3,9 @@
 | Field | Value |
 |---|---|
 | Package | general-average |
-| As at | 2026-08-15 |
-| Instruments | York-Antwerp Rules 2016 (CMI) |
-| Current stage | **FOUNDER_REVIEW** — TSCR-6 and TSCR-9 resolved; public-derived migration applied; package **not** complete (see residuals) |
+| As at | 2026-08-16 |
+| Instruments | York-Antwerp Rules 2016 (CMI) — maintained text, carrying the Genoa (Rule XVII) and Antwerp October 2022 (Rule XXI(b)) corrections |
+| Current stage | **FOUNDER_REVIEW** — TSCR-6, TSCR-9 and the Rule XXI gap resolved; public-derived migration applied; package **not** complete (see residuals) |
 | Architecture | **PUBLIC DERIVED / PRIVATE EVIDENCE** — adopted 2026-08-15 |
 
 ## Architecture — PUBLIC DERIVED / PRIVATE EVIDENCE
@@ -22,7 +22,9 @@ What the migration did **not** do:
 
 - It did not change any object's verification state. Three objects are `primary_verified`
   (`YAR-PARAMOUNT`, `YAR-D`, `YAR-VI`) and three are `unverified_legacy` (`YAR-A`, `YAR-C`,
-  `YAR-XVII`) — the same split as before.
+  `YAR-XVII`) — the same split as before. *(That 3/3 split describes the package as it stood on
+  2026-08-15. TS-P07 later added three further `primary_verified` Rule XXI objects, making the current
+  split 6/3; it upgraded none of the three `unverified_legacy` objects. See Metrics above.)*
 - It did not correct any legal content. The known `YAR-C` and `YAR-XVII` defects are now carried
   explicitly on the objects as `known_defect`, and remain open.
 - It did not create the missing `YAR-XVIII` / `XIX` / `XX` objects, resolve sequence node 5, or touch
@@ -30,14 +32,18 @@ What the migration did **not** do:
 - It did not remove verbatim wording from earlier commits. **Historical public source exposure
   remains in Git history** — a separate founder decision.
 
-## Metrics (corrected 2026-08-15)
-- Rule definition objects: **6** — `YAR-PARAMOUNT`, `YAR-A`, `YAR-C`, `YAR-D`, `YAR-VI`, `YAR-XVII`
+## Metrics (recomputed from the files 2026-08-16)
+- Rule definition objects: **9** — `YAR-PARAMOUNT`, `YAR-A`, `YAR-C`, `YAR-D`, `YAR-VI`, `YAR-XVII`, `YAR-XXI-A`, `YAR-XXI-B`, `YAR-XXI-B-ORIGINAL`
+- Rules of YAR 2016 as published by CMI: **32** (Rule of Interpretation + Rule Paramount + A–G + I–XXIII); rules held as objects: **8** (Rule XXI is held as two paragraph-level objects, plus one superseded state)
 - Instrument register entries: 4 (YAR 2016 current; 1994/1974/1924 lineage)
-- Trap / negative-knowledge objects: 4
+- Trap / negative-knowledge objects: **5**
 - Boundary objects: 1
-- Sequence: 1 chain, 5 nodes
-- Verified against primary source: **3** (`YAR-PARAMOUNT`, `YAR-D`, `YAR-VI`) — see `YAR_SOURCE_PROVENANCE.md`
-- Unverified against primary source: **3** (`YAR-A`, `YAR-C`, `YAR-XVII`)
+- Sequence: 1 chain, **6** nodes
+- Registered sources: **4** — `CMI-YAR-2016`, `CMI-YAR-2004`, `CMI-YAR-TABULAR-1994-2004-2016`, `CMI-YAR-2016-PRE-2022`
+- Evidence records: **5**
+- Verified against primary source: **6** (`YAR-PARAMOUNT`, `YAR-D`, `YAR-VI`, `YAR-XXI-A`, `YAR-XXI-B`, `YAR-XXI-B-ORIGINAL`) — see `YAR_SOURCE_PROVENANCE.md`
+- Unverified against primary source: **3** (`YAR-A`, `YAR-C`, `YAR-XVII`) — unchanged; no verification state was upgraded on 2026-08-16
+- Superseded objects: **1** (`YAR-XXI-B-ORIGINAL`) — primary-source accurate for a state that no longer applies; carries no reasoning node
 
 > The previous block claimed "Rule objects: 24 (Paramount + Rules A-G + I-XXIII)" and "Total
 > structured objects: 33 / Verified: all". Those figures were not true of the tree and are corrected
@@ -77,6 +83,72 @@ Raised by TSCR-6, which surfaced the defect but was scoped not to fix it. Opened
 | Scope discipline | `YAR-C`, `YAR-XVII`, `YAR-A`, the `YAR-XVIII/XIX/XX` danglers and the `COVERAGE_MATRIX` hygiene items were **not** touched. `YAR-D` and `YAR-PARAMOUNT` were **not** touched |
 | QP exposure | **CONTAMINATION FOUND — `QP2407` Q8.** Confirmed read-only; **no QP edited**. See below |
 | Verification | JSON parses; `YAR-VI` resolves; node 4 references resolve; **0 active objects present the YAR 2004 salvage exclusion as YAR 2016 law** |
+
+### TS-P07 — Rule XXI was not held at all, and the gap was consumed downstream — **RESOLVED 2026-08-16**
+
+Not a correction: a **gap closure**. Rule XXI had no representation in this package in any form. The
+package was silent rather than wrong, and a downstream consumer filled the silence from general
+literature — most of which predates the October 2022 amendment.
+
+| Field | Value |
+|---|---|
+| Classification | **Gap, with confirmed downstream consumption** — the stale LIBOR-based interest proposition reached MIW written-answer material once |
+| Primary authority | CMI, *York-Antwerp Rules 2016 (English version)* — the maintained text — SHA-256 `0c364edb…`, **re-retrieved 2026-08-16 and byte-identical** to the TSCR-6 / TSCR-9 record. For the superseded state: CMI's own "(old)" posting, SHA-256 `2d0472e8…`, newly registered as `CMI-YAR-2016-PRE-2022` |
+| Finding — current | Rule XXI(b) fixes the rate **for each calendar year** at the **USD Prime Rate plus 2 per cent per annum**, on the figure the **Wall Street Journal** carried for that year's **opening banking day**. It is a US dollar rate whatever currency the adjustment is drawn in |
+| Finding — superseded | As adopted in May 2016 the paragraph used **twelve-month ICE LIBOR in the currency of the adjustment plus four percentage points**, with a US dollar fallback. The amendment changed benchmark **and** margin **and** removed the currency-matching limb |
+| Finding — Rule XXI(a) | **Unchanged.** Verified as textually identical in the as-adopted and maintained texts. The CMI amendment footnote is attached to paragraph (b) alone |
+| Finding — edition | **No YAR 2022 edition exists.** The edition was not renumbered by either the Genoa or the Antwerp intervention |
+| Finding — Genoa | Separately identified: the CMI Assembly at **Genoa in September (2016)** restored wording dropped in error from **Rule XVII**, not Rule XXI. Recorded at instrument level only; `YAR-XVII` was **not** touched |
+| `YAR_DEFINITIONS.json` | `YAR-XXI-A`, `YAR-XXI-B` and `YAR-XXI-B-ORIGINAL` **added**, all `primary_verified`; `superseded_objects` block added |
+| `EVIDENCE_INDEX.json` | Source `CMI-YAR-2016-PRE-2022` registered; evidence `EVID-YAR-2016-XXI` and `EVID-YAR-2016-XXI-B-ORIGINAL` added |
+| `CANDIDATE_TRAPS_AND_MISSING_POINTS.md` | `TRAP-YAR-XXI-LIBOR` added — stale benchmark, phantom 2022 edition, and the paragraph-(a) over-reach |
+| `YAR_SEQUENCE.json` | Node 6 added; `YAR-XXI-B-ORIGINAL` deliberately excluded from `governing_objects` and recorded under `excluded_superseded` |
+| `YAR_INSTRUMENT_REGISTER.md` | Amendment history added distinguishing Genoa from Antwerp; adoption venue corrected Beijing → New York; edition-identity negative knowledge added |
+| Scope discipline | `YAR-A`, `YAR-C`, `YAR-XVII`, `YAR-D`, `YAR-PARAMOUNT`, `YAR-VI` and the `YAR-XVIII/XIX/XX` danglers were **not** touched. No placeholder object was created to make node 5 resolve |
+| QP exposure | **Not re-audited in this session.** The downstream solvedQP repository was corrected separately before this work; this package was rebuilt above it, not from it |
+| Verification | See "Validation — Rule XXI (TS-P07)" below |
+
+**How the evidence was created.** No vault existed on this machine, and the architecture prototype
+(`5e66d30`) records that none exists as a persistent store — the private layer is a git-ignored
+working-tree directory. The hashing convention was therefore not guessed: it was **recovered by
+reproducing two existing upstream `evidence_sha256` values** (`EVID-YAR-2016-PARAMOUNT` and
+`EVID-YAR-2016-D`) from the registered source PDF. Both reproduce exactly, which establishes the
+convention as SHA-256 over the UTF-8 bytes of the rule body with whitespace collapsed, headings and
+superscript footnote markers excluded. The two Rule XXI hashes were then computed the same way.
+`EVID-YAR-2016-VI` was not reproduced, as expected — its scope is a deliberate partial composition of
+paragraphs (a) and (d), which is not derivable without the original editorial choice.
+
+### Validation — Rule XXI (TS-P07), 2026-08-16
+
+Session-local deterministic checks, run as one-off scripts. **There is still no repository CI or
+validator**; nothing was installed.
+
+- JSON parse (`YAR_DEFINITIONS.json`, `EVIDENCE_INDEX.json`, `YAR_SEQUENCE.json`): PASS
+- Object IDs unique (**9/9**); evidence IDs unique (**5/5**): PASS
+- Object key set matches the upstream schema **exactly** on all 9 objects; `relationships` key set uniform: PASS
+- Every asserted `evidence_id` and `source_id` resolves; `public_objects` back-references complete: PASS
+- Object-level hashes agree with `EVIDENCE_INDEX.json`: **0 mismatches**
+- `EVIDENCE HASH MISMATCHES: 0` — recomputed from the private layer for the **2 passages present in this
+  working tree**. The 3 passages created in earlier sessions are not present locally and were **not**
+  recomputed; that is recorded rather than reported as a pass
+- `unverified_legacy` objects assert no evidence: PASS (3 objects, unchanged — **no verification state
+  was upgraded**)
+- Node 6 resolves; object `reasoning_nodes` back-references resolve; every referenced trap exists: PASS
+- **`SUPERSEDED OBJECT IN GOVERNING_OBJECTS: 0`** — `YAR-XXI-B-ORIGINAL` carries an empty
+  `reasoning_nodes` list and appears in no chain node
+- **`ACTIVE RULE XXI OBJECTS PRESENTING LIBOR AS THE OPERATIVE BENCHMARK: 0`** — LIBOR survives only as
+  the mechanism that was replaced, and in the superseded object
+- **`OBJECTS CLAIMING A 2022 EDITION: 0`**
+- Boundary audit: source PDFs committed **0**; absolute machine paths **0**; malformed `vault://` keys
+  **0**; conflict markers **0**; source-wording fields in public objects **0**
+- Verbatim-overlap inspection against the private passages: **longest shared run 7 words**, matching the
+  migration's own tolerance; every run at 5–7 words is an operative term of art (*2 per cent per annum*,
+  *first banking day*, *general average deposit fund*, *twelve-month ICE LIBOR*). An earlier draft ran to
+  **14 words** and was rewritten after the audit caught it
+- Semantic retrieval Q1–Q7, answered from the **public layer alone**: **7/7 PASS**
+- Reference resolution: nodes 1–4 and 6 resolve; **node 5 still references 3 non-existent objects**
+  (`YAR-XVIII/XIX/XX`) — pre-existing, out of scope, and deliberately **not** forced to pass by creating
+  placeholder objects
 
 ### Downstream QP exposure — `DOWNSTREAM_QP_REPAIR_REQUIRED`
 
