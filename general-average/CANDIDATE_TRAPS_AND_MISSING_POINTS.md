@@ -164,8 +164,8 @@ Separate the edition from the amendment state, then take the two paragraphs in t
 3. **Rule XXI(a) — unchanged (`YAR-XXI-A`):** interest runs until three months after the adjustment is
    **issued**, with credit for payments on account and for the deposit fund.
 4. **Rule XXI(b) — current (`YAR-XXI-B`):** for each calendar year, the **USD Prime Rate plus 2 per cent
-   per annum**, on the figure the **Wall Street Journal** carried for that year's **opening banking
-   day** — a dollar rate whatever the adjustment currency, and fixed on that one day for the whole
+   per annum**, on the Prime Rate the **Wall Street Journal** publishes for that
+   **calendar year**'s **first banking day** — a dollar rate whatever the adjustment currency, and fixed on that one day for the whole
    year.
 5. **If LIBOR appears in the material in front of you**, place it rather than repeat it: it is the
    superseded original basis (`YAR-XXI-B-ORIGINAL`), which dates the source rather than the rule.

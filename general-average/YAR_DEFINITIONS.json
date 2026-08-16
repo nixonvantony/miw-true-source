@@ -293,7 +293,7 @@
    "edition": "2016 (as amended, Antwerp, October 2022)",
    "locator": "Rule XXI(b)",
    "term": "interest on allowances - the rate, current basis",
-   "proposition": "The interest rate is not set once for the life of the adjustment; it is re-struck for each calendar year in which interest accrues. For any such year the rate is the USD Prime Rate with two percentage points added - the Rules put the addition as 2 per cent per annum - and the Prime Rate figure is the one the Wall Street Journal carried for that year's first banking day. Two features of this are easy to miss and both matter in an adjustment. The benchmark is a United States dollar rate whatever currency the adjustment is drawn in, so there is no matching of rate to money of account; and because the figure is captured on one stated day, movement in the Prime Rate later in that year does not disturb the rate already fixed for it. This basis replaced a LIBOR-linked mechanism by technical amendment in October 2022, the benchmark having been withdrawn; the edition was not renumbered and remains the York-Antwerp Rules 2016.",
+   "proposition": "The interest rate is not set once for the life of the adjustment; it is re-struck for each calendar year in which interest accrues. For any such year the rate is the USD Prime Rate with two percentage points added - the Rules put the addition as 2 per cent per annum - and the Prime Rate figure is the one the Wall Street Journal publishes for that calendar year's first banking day. Two features of this are easy to miss and both matter in an adjustment. The benchmark is a United States dollar rate whatever currency the adjustment is drawn in, so there is no matching of rate to money of account; and because the figure is captured on one stated day, movement in the Prime Rate later in that year does not disturb the rate already fixed for it. This basis replaced a LIBOR-linked mechanism by technical amendment in October 2022, the benchmark having been withdrawn; the edition was not renumbered and remains the York-Antwerp Rules 2016.",
    "proposition_authorship": "MIW",
    "verification": {
     "status": "primary_verified",
@@ -324,7 +324,7 @@
     },
     {
      "edition": "2016 (as amended, CMI Assembly, Antwerp, October 2022)",
-     "position": "Current basis. USD Prime Rate plus 2 per cent per annum, on the figure the Wall Street Journal carried for the opening banking day of the calendar year. Recorded in the maintained CMI text by a footnote attached to this paragraph alone.",
+     "position": "Current basis. USD Prime Rate plus 2 per cent per annum, on the Prime Rate the Wall Street Journal publishes for that calendar year's first banking day. Recorded in the maintained CMI text by a footnote attached to this paragraph alone.",
      "source_id": "CMI-YAR-2016"
     }
    ],
@@ -336,7 +336,7 @@
    "edition": "2016 (as adopted, New York, May 2016)",
    "locator": "Rule XXI(b)",
    "term": "interest on allowances - the rate, SUPERSEDED original basis",
-   "proposition": "SUPERSEDED - this records the mechanism as first adopted in May 2016 and displaced in October 2022, and it states no part of the current position. The original paragraph worked from ICE LIBOR at the twelve-month tenor rather than from a prime rate, and it matched the benchmark to the money of account: the rate was the twelve-month ICE LIBOR for the currency the adjustment was drawn in, announced on the calendar year's opening banking day, with four percentage points added. Where no ICE LIBOR was announced for that currency the paragraph fell back to the twelve-month United States dollar tenor, again with four percentage points added. Every element has since moved - the benchmark, the margin, and the currency-matching limb, which has gone altogether. The object is kept because study material, average adjusters and commentary written before 2023 still describe general average interest this way, and a reader meeting that description needs to be able to place it rather than trust it.",
+   "proposition": "SUPERSEDED - this records the mechanism as first adopted in May 2016 and displaced in October 2022, and it states no part of the current position. The original paragraph worked from ICE LIBOR at the twelve-month tenor rather than from a prime rate, and it matched the benchmark to the money of account: the rate was the twelve-month ICE LIBOR for the currency the adjustment was drawn in, announced on the first banking day of that calendar year, with four percentage points added. Where no ICE LIBOR was announced for that currency the paragraph fell back to the twelve-month United States dollar tenor, again with four percentage points added. Every element has since moved - the benchmark, the margin, and the currency-matching limb, which has gone altogether. The object is kept because study material, average adjusters and commentary written before 2023 still describe general average interest this way, and a reader meeting that description needs to be able to place it rather than trust it.",
    "proposition_authorship": "MIW",
    "verification": {
     "status": "primary_verified",

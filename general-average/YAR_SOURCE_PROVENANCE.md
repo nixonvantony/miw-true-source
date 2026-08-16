@@ -120,8 +120,8 @@ superseded paragraph (b)). The public objects carry the propositions and the poi
   fund. **Unchanged** by the October 2022 amendment — established positively, by comparing the two CMI
   postings, not inferred from the footnote's placement alone.
 - **Paragraph (b) — the rate, current.** Re-struck for each calendar year at the **USD Prime Rate plus
-  2 per cent per annum**, on the figure the **Wall Street Journal** carried for that year's **opening
-  banking day**. A US dollar rate whatever the adjustment currency.
+  2 per cent per annum**, on the Prime Rate the **Wall Street Journal** publishes for that
+  **calendar year**'s **first banking day**. A US dollar rate whatever the adjustment currency.
 - **Paragraph (b) — the rate, superseded.** As adopted: **twelve-month ICE LIBOR in the currency of the
   adjustment plus four percentage points**, with a twelve-month US dollar fallback. The amendment moved
   the benchmark, moved the margin, and removed the currency-matching limb altogether — an answer that

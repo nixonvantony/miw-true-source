@@ -94,7 +94,7 @@ literature — most of which predates the October 2022 amendment.
 |---|---|
 | Classification | **Gap, with confirmed downstream consumption** — the stale LIBOR-based interest proposition reached MIW written-answer material once |
 | Primary authority | CMI, *York-Antwerp Rules 2016 (English version)* — the maintained text — SHA-256 `0c364edb…`, **re-retrieved 2026-08-16 and byte-identical** to the TSCR-6 / TSCR-9 record. For the superseded state: CMI's own "(old)" posting, SHA-256 `2d0472e8…`, newly registered as `CMI-YAR-2016-PRE-2022` |
-| Finding — current | Rule XXI(b) fixes the rate **for each calendar year** at the **USD Prime Rate plus 2 per cent per annum**, on the figure the **Wall Street Journal** carried for that year's **opening banking day**. It is a US dollar rate whatever currency the adjustment is drawn in |
+| Finding — current | Rule XXI(b) fixes the rate **for each calendar year** at the **USD Prime Rate plus 2 per cent per annum**, on the Prime Rate the **Wall Street Journal** publishes for that **calendar year**'s **first banking day**. It is a US dollar rate whatever currency the adjustment is drawn in |
 | Finding — superseded | As adopted in May 2016 the paragraph used **twelve-month ICE LIBOR in the currency of the adjustment plus four percentage points**, with a US dollar fallback. The amendment changed benchmark **and** margin **and** removed the currency-matching limb |
 | Finding — Rule XXI(a) | **Unchanged.** Verified as textually identical in the as-adopted and maintained texts. The CMI amendment footnote is attached to paragraph (b) alone |
 | Finding — edition | **No YAR 2022 edition exists.** The edition was not renumbered by either the Genoa or the Antwerp intervention |
@@ -141,14 +141,41 @@ validator**; nothing was installed.
 - **`OBJECTS CLAIMING A 2022 EDITION: 0`**
 - Boundary audit: source PDFs committed **0**; absolute machine paths **0**; malformed `vault://` keys
   **0**; conflict markers **0**; source-wording fields in public objects **0**
-- Verbatim-overlap inspection against the private passages: **longest shared run 7 words**, matching the
-  migration's own tolerance; every run at 5–7 words is an operative term of art (*2 per cent per annum*,
-  *first banking day*, *general average deposit fund*, *twelve-month ICE LIBOR*). An earlier draft ran to
-  **14 words** and was rewritten after the audit caught it
-- Semantic retrieval Q1–Q7, answered from the **public layer alone**: **7/7 PASS**
+- Verbatim-overlap inspection against the private passages: **longest shared run 10 words** —
+  *"announced on the first banking day of that calendar year"* — classified
+  **OPERATIVE_TERMINOLOGY_NECESSARY** and deliberately retained. See the overlap-policy note below
+- Semantic retrieval, answered from the **public layer alone**: **8/8 PASS**
 - Reference resolution: nodes 1–4 and 6 resolve; **node 5 still references 3 non-existent objects**
   (`YAR-XVIII/XIX/XX`) — pre-existing, out of scope, and deliberately **not** forced to pass by creating
   placeholder objects
+
+### Overlap policy — how the word-run diagnostic is to be read
+
+The word-run count is a **diagnostic, not a definition of correctness**. Accuracy governs. Two rules
+were applied on Founder review, 2026-08-16:
+
+**Operative wording is never distorted to lower the count.** Instrument and rule titles, defined terms,
+benchmark names, numerical requirements, units and dates stay exactly as the Rules put them —
+*USD Prime Rate*, *2 per cent per annum*, *Wall Street Journal*, *first banking day*, *calendar year*,
+*twelve-month ICE LIBOR*, *four percentage points*. An intermediate draft had replaced *first banking
+day* with "opening banking day" purely to reduce overlap. That was an over-application of the boundary:
+it degraded a date basis on which an adjustment turns, for no rights benefit. It was reverted, and the
+exact term restored at every site.
+
+**A single continuous run reproducing a substantial share of a paragraph is still reduced.** A draft
+carried one 16-word continuous run — about **40 per cent** of the 40-word operative paragraph — which
+is substantial reproduction rather than operative terminology, and the in-force
+[`PRIVATE_EVIDENCE_BOUNDARY.md`](../PRIVATE_EVIDENCE_BOUNDARY.md) does not permit it. It was reduced by
+changing **connectives and clause order only**; every operative term above survived verbatim and the
+proposition became no vaguer.
+
+The working line between the two: a run is acceptable where it consists of operative terms plus
+unavoidable connectives and does not reproduce a substantial proportion of the source paragraph. The
+surviving 10-word run is the date-basis clause at about **25 per cent** of the paragraph, and it earns
+its place — the date basis is one of the few elements the October 2022 amendment did **not** change, so
+stating it in the same terms in both the current and superseded objects is what makes that visible.
+
+**Nothing in this package was made less accurate for copyright reasons.**
 
 ### Downstream QP exposure — `DOWNSTREAM_QP_REPAIR_REQUIRED`
 
